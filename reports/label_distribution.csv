@@ -1,0 +1,1161 @@
+task,label,count
+intent_norm,açıklama,3477
+intent_norm,hipotez,912
+intent_norm,soru,242
+intent_norm,tanı,203
+intent_norm,unknown,200
+intent_norm,talimat,197
+intent_norm,tedavi,176
+intent_norm,değerlendirme,128
+intent_norm,gözlem,119
+intent_norm,öneri,92
+intent_norm,test,91
+intent_norm,teşhis,88
+intent_norm,şaka,85
+intent_norm,karar,63
+intent_norm,itiraz,63
+intent_norm,talep,57
+intent_norm,uyarı,54
+intent_norm,emir,51
+intent_norm,durum değerlendirme,49
+intent_norm,şikayet bildirimi,48
+intent_norm,raporlama,44
+intent_norm,prosedür açıklama,39
+intent_norm,bilgi talebi,38
+intent_norm,tanısal,33
+intent_norm,reçete,32
+intent_norm,sorgulama,29
+intent_norm,soru sorma,28
+intent_norm,tanı koymak,25
+intent_norm,test talebi,25
+intent_norm,tedavi önerisi,24
+intent_norm,teşhis sorgusu,24
+intent_norm,sonuç,23
+intent_norm,durum bilgilendirmesi,22
+intent_norm,acil,21
+intent_norm,hipotez önerme,20
+intent_norm,semptom bildirimi,18
+intent_norm,yönlendirme,17
+intent_norm,test isteği,16
+intent_norm,sonuç_bildirimi,15
+intent_norm,test sonucu bildirmek,12
+intent_norm,test istemek,12
+intent_norm,semptom_bildirimi,12
+intent_norm,test sonucu bildirme,12
+intent_norm,kesin_tanı,11
+intent_norm,hipotez çürütme,11
+intent_norm,ön tanı koymak,10
+intent_norm,durum_bildirimi,10
+intent_norm,tedavi_önerisi,9
+intent_norm,işlem,9
+intent_norm,şikayet,8
+intent_norm,tanı_açıklama,8
+intent_norm,hipotez_önerisi,8
+intent_norm,akut,7
+intent_norm,genel değerlendirme,6
+intent_norm,yeni hipotez önerme,6
+intent_norm,tedavi talimatı,6
+intent_norm,acil müdahale,5
+intent_norm,durum bildirimi,5
+intent_norm,onay,5
+intent_norm,özetleme,5
+intent_norm,test talimatı,5
+intent_norm,risk uyarısı,5
+intent_norm,bilgi verme,4
+intent_norm,tanı koyma,4
+intent_norm,tedavi planı,4
+intent_norm,prosedür,4
+intent_norm,alternatif,4
+intent_norm,final,4
+intent_norm,yorum,4
+intent_norm,test_isteği,4
+intent_norm,ayırıcı tanı,4
+intent_norm,semptom bildirme,4
+intent_norm,test önerme,4
+intent_norm,muayene,3
+intent_norm,vaka sunumu,3
+intent_norm,öykü,3
+intent_norm,komplikasyon,3
+intent_norm,kişisel,3
+intent_norm,teşhis koyma,3
+intent_norm,alternatif tanı önerme,3
+intent_norm,durum güncellemesi,3
+intent_norm,semptom açıklama,3
+intent_norm,acil durum tespiti,3
+intent_norm,kesin tanı,3
+intent_norm,bulgu,2
+intent_norm,durum değerlendirmesi,2
+intent_norm,test sonucu,2
+intent_norm,hikaye,2
+intent_norm,teori,2
+intent_norm,ikna,2
+intent_norm,plan,2
+intent_norm,geçmiş_bildirimi,2
+intent_norm,prosedür_açıklama,2
+intent_norm,analiz_bildirimi,2
+intent_norm,risk_bildirimi,2
+intent_norm,amaç,2
+intent_norm,test istemi,2
+intent_norm,konsültasyon,2
+intent_norm,risk,2
+intent_norm,sorgu,2
+intent_norm,gözlem gözlem,2
+intent_norm,ret,2
+intent_norm,acil müdahale bildirimi,2
+intent_norm,hipotez destekleme,2
+intent_norm,semptom gözlemi,2
+intent_norm,semptomları özetleme,2
+intent_norm,alternatif açıklama,2
+intent_norm,ikna etme,2
+intent_norm,semptom inkarı,2
+intent_norm,şüphe bildirme,2
+intent_norm,empati,1
+intent_norm,endişe,1
+intent_norm,müdahale,1
+intent_norm,hipotez sunma,1
+intent_norm,tedavi planlama,1
+intent_norm,teşhis ve tedavi planı,1
+intent_norm,alternatif bulmak,1
+intent_norm,tahmin,1
+intent_norm,uyuşturucu elemek,1
+intent_norm,susuzluk gidermek,1
+intent_norm,uyuşturucu elendi,1
+intent_norm,politika,1
+intent_norm,klinik ziyaret,1
+intent_norm,yan etki,1
+intent_norm,deneysel,1
+intent_norm,danışma,1
+intent_norm,arrest,1
+intent_norm,soru_geçmiş,1
+intent_norm,neden_sorgulama,1
+intent_norm,soru_tedavi,1
+intent_norm,durum_sorgulama,1
+intent_norm,soru_prosedür,1
+intent_norm,prosedür_bildirimi,1
+intent_norm,onay_bildirimi,1
+intent_norm,araştırma,1
+intent_norm,tıbbi öykü,1
+intent_norm,tanı iddiası,1
+intent_norm,araştırma istemi,1
+intent_norm,tedavi/test,1
+intent_norm,risk açıklaması,1
+intent_norm,etik yorum,1
+intent_norm,yöntem önerisi,1
+intent_norm,ilaç açıklaması,1
+intent_norm,tanı açıklaması,1
+intent_norm,sarcastic yorum,1
+intent_norm,sonuç değerlendirmesi,1
+intent_norm,inkar,1
+intent_norm,gözlem ... gözlem,1
+intent_norm,red,1
+intent_norm,düzeltme,1
+intent_norm,şüphe,1
+intent_norm,fikir yürütme,1
+intent_norm,tedavi sonucu bildirme,1
+intent_norm,semptom / teşhis bildirme,1
+intent_norm,hipotez kurma,1
+intent_norm,talimat verme,1
+intent_norm,tedavi bildirimi,1
+intent_norm,hipotezi savunma,1
+intent_norm,hipotezi destekleme,1
+intent_norm,teşhis açıklama,1
+intent_norm,kesin tanı koyma,1
+intent_norm,iğneleme / gerçeği çarpıtma,1
+intent_norm,bilgi isteme,1
+intent_norm,küçümseme / kıyaslama,1
+intent_norm,hastalık bilgisi verme,1
+intent_norm,hastalık bildirme,1
+intent_norm,semptom değerlendirmesi,1
+intent_norm,tedavi açıklama,1
+intent_norm,hipotez tekrarlama,1
+intent_norm,teşhis onaylama,1
+intent_norm,semptom sorgulama,1
+intent_norm,test sonucu değerlendirme,1
+intent_norm,teşhis değerlendirme,1
+intent_norm,kesin tanı tahmini,1
+intent_norm,tedavi önerme,1
+intent_norm,çözüm önerme,1
+intent_norm,test sonucu uyumsuzluğu,1
+intent_norm,neden açıklama,1
+intent_norm,bilgilendirici,1
+intent_norm,ameliyat bulgusu bildirme,1
+intent_norm,tanı bildirme,1
+intent_norm,teşhis çürütme,1
+intent_norm,durum uyarısı,1
+intent_norm,karşılaştırma yapma,1
+intent_norm,durum tespiti,1
+intent_norm,test materyali açıklama,1
+intent_norm,çaresizlik bildirme,1
+emotion_norm,nötr,3818
+emotion_norm,ciddi,711
+emotion_norm,endişe,317
+emotion_norm,alaycı,275
+emotion_norm,panik,225
+emotion_norm,analitik,225
+emotion_norm,kararlı,150
+emotion_norm,emin,87
+emotion_norm,korku,78
+emotion_norm,acil,76
+emotion_norm,otoriter,68
+emotion_norm,düşünceli,62
+emotion_norm,kaygı,56
+emotion_norm,öfke,53
+emotion_norm,empati,52
+emotion_norm,şaşkın,51
+emotion_norm,üzgün,47
+emotion_norm,sakin,42
+emotion_norm,umut,42
+emotion_norm,şaşkınlık,40
+emotion_norm,acı,35
+emotion_norm,üzüntü,29
+emotion_norm,meraklı,29
+emotion_norm,emredici,27
+emotion_norm,yorgunluk,27
+emotion_norm,odaklanmış,22
+emotion_norm,umutlu,22
+emotion_norm,kaygılı,21
+emotion_norm,nört,18
+emotion_norm,şüphe,16
+emotion_norm,kendinden emin,15
+emotion_norm,sevinç,15
+emotion_norm,şüpheci,14
+emotion_norm,bilgi verici,14
+emotion_norm,bıkkın,13
+emotion_norm,sorgulayıcı,13
+emotion_norm,ukala,13
+emotion_norm,rahatlamış,12
+emotion_norm,korkmuş,12
+emotion_norm,telaşlı,12
+emotion_norm,mantıklı,11
+emotion_norm,bilgilendirici,11
+emotion_norm,ümitsizlik,11
+emotion_norm,açıklayıcı,10
+emotion_norm,sert,9
+emotion_norm,rahatlatıcı,9
+emotion_norm,güven,9
+emotion_norm,çaresiz,8
+emotion_norm,zafer,8
+emotion_norm,uyarıcı,8
+emotion_norm,rahatlama,7
+emotion_norm,hayal kırıklığı,7
+emotion_norm,savunmacı,7
+emotion_norm,rahatsızlık,7
+emotion_norm,ikna edici,7
+emotion_norm,gergin,6
+emotion_norm,şok,6
+emotion_norm,profesyonel,6
+emotion_norm,umutsuz,6
+emotion_norm,hevesli,6
+emotion_norm,inatçı,6
+emotion_norm,net,6
+emotion_norm,iğneleyici,6
+emotion_norm,aydınlanma,6
+emotion_norm,bilgiç,6
+emotion_norm,mutlu,5
+emotion_norm,iddialı,5
+emotion_norm,sinirli,5
+emotion_norm,keder,5
+emotion_norm,aydınlanmış,5
+emotion_norm,bitkin,5
+emotion_norm,karşıt,5
+emotion_norm,kibirli,4
+emotion_norm,korkulu,4
+emotion_norm,öfkeli,4
+emotion_norm,resmi,4
+emotion_norm,kızgın,4
+emotion_norm,heyecanlı,4
+emotion_norm,güven verici,4
+emotion_norm,araştırmacı,4
+emotion_norm,onaylayıcı,4
+emotion_norm,kötü,4
+emotion_norm,emir,3
+emotion_norm,sıkılmış,3
+emotion_norm,yorgun,3
+emotion_norm,gözlemci,3
+emotion_norm,nükteli,3
+emotion_norm,kafası karışık,3
+emotion_norm,rahatsız,3
+emotion_norm,acı içinde,3
+emotion_norm,memnun,3
+emotion_norm,merak,3
+emotion_norm,irritasyon,3
+emotion_norm,konsantrasyon,3
+emotion_norm,enerjik,3
+emotion_norm,rahat,3
+emotion_norm,şikayetçi,3
+emotion_norm,soru soran,3
+emotion_norm,aceleci,2
+emotion_norm,tedirgin,2
+emotion_norm,acı dolu,2
+emotion_norm,acı çeken,2
+emotion_norm,hasta,2
+emotion_norm,iğrenme,2
+emotion_norm,kuşkulu,2
+emotion_norm,temkinli,2
+emotion_norm,düşmanca,2
+emotion_norm,küçümseyici,2
+emotion_norm,teknik,2
+emotion_norm,şüpheli,2
+emotion_norm,vahametli,2
+emotion_norm,itirazcı,2
+emotion_norm,mutsuz,2
+emotion_norm,unknown,2
+emotion_norm,itiraz,2
+emotion_norm,dikkatli,2
+emotion_norm,eleştirel,2
+emotion_norm,yardımsever,2
+emotion_norm,stres,2
+emotion_norm,halsizlik,2
+emotion_norm,zeki,2
+emotion_norm,şefkatli,2
+emotion_norm,öğretici,2
+emotion_norm,itiraz eden,2
+emotion_norm,şok edici,1
+emotion_norm,bıkkınlık,1
+emotion_norm,ciddiyet,1
+emotion_norm,umursamaz,1
+emotion_norm,bilimsel,1
+emotion_norm,izdırap,1
+emotion_norm,hesaplanmış,1
+emotion_norm,manipülatif,1
+emotion_norm,esprili,1
+emotion_norm,zalim,1
+emotion_norm,cilt,1
+emotion_norm,özel,1
+emotion_norm,gizemli,1
+emotion_norm,zorlanmış,1
+emotion_norm,şaşırmış,1
+emotion_norm,anlayışlı,1
+emotion_norm,muzaffer,1
+emotion_norm,tereddütlü,1
+emotion_norm,suçlu,1
+emotion_norm,aç,1
+emotion_norm,mutsuzluk,1
+emotion_norm,yatıştırıcı,1
+emotion_norm,solunum,1
+emotion_norm,destekleyici,1
+emotion_norm,meydan okuyan,1
+emotion_norm,çekingen,1
+emotion_norm,korkutucu,1
+emotion_norm,fedakar,1
+emotion_norm,sabırsızlık,1
+emotion_norm,umutsuzluk,1
+emotion_norm,güvence_verici,1
+emotion_norm,heyecan,1
+emotion_norm,boşluk,1
+emotion_norm,hüzün,1
+emotion_norm,hüzünlü,1
+emotion_norm,acılı,1
+emotion_norm,utanmış,1
+emotion_norm,tehlikeli,1
+emotion_norm,karamsar,1
+emotion_norm,olumlu,1
+emotion_norm,gerçekçi,1
+emotion_norm,etkilenmiş,1
+emotion_norm,pratik,1
+emotion_norm,teslimiyetçi,1
+emotion_norm,mahcup,1
+emotion_norm,ağlamaklı,1
+emotion_norm,şok olmuş,1
+emotion_norm,dehşete düşmüş,1
+emotion_norm,delüzyonel,1
+emotion_norm,kararsız,1
+emotion_norm,özür dileyen,1
+emotion_norm,minnettar,1
+emotion_norm,suçluluk,1
+emotion_norm,yıkılmış,1
+emotion_norm,mutluluk,1
+emotion_norm,stresli,1
+emotion_norm,cesur,1
+emotion_norm,bilgili,1
+emotion_norm,kayıtsız,1
+emotion_norm,emin olmayan,1
+emotion_norm,çözüm odaklı,1
+emotion_norm,inançlı,1
+emotion_norm,hızlı,1
+sarcasm_label,not_sarcastic,6872
+sarcasm_label,sarcastic,406
+sarcasm_label,unknown,3
+diagnosis_stage_norm,değerlendirme,1791
+diagnosis_stage_norm,hipotez,1272
+diagnosis_stage_norm,test,952
+diagnosis_stage_norm,tedavi,602
+diagnosis_stage_norm,unknown,411
+diagnosis_stage_norm,tanı,363
+diagnosis_stage_norm,kesin_tanı,308
+diagnosis_stage_norm,ayırıcı_tanı,283
+diagnosis_stage_norm,kritik,121
+diagnosis_stage_norm,araştırma,60
+diagnosis_stage_norm,acil,51
+diagnosis_stage_norm,tedavi_planı,50
+diagnosis_stage_norm,ilk_değerlendirme,45
+diagnosis_stage_norm,orta evre,41
+diagnosis_stage_norm,erken evre,40
+diagnosis_stage_norm,tanı araması,39
+diagnosis_stage_norm,ilk muayene,36
+diagnosis_stage_norm,tanı koymak,33
+diagnosis_stage_norm,semptom_tanıma,30
+diagnosis_stage_norm,tedavi sonrası,30
+diagnosis_stage_norm,başlangıç,29
+diagnosis_stage_norm,erken tanı,29
+diagnosis_stage_norm,izlem,25
+diagnosis_stage_norm,test / tetkik,25
+diagnosis_stage_norm,itiraz,23
+diagnosis_stage_norm,ileri evre,23
+diagnosis_stage_norm,test_sonucu,23
+diagnosis_stage_norm,erken,22
+diagnosis_stage_norm,kronik,21
+diagnosis_stage_norm,test_süreci,20
+diagnosis_stage_norm,komplikasyon,19
+diagnosis_stage_norm,geç,19
+diagnosis_stage_norm,son,19
+diagnosis_stage_norm,sonuç,17
+diagnosis_stage_norm,belirsiz,16
+diagnosis_stage_norm,hastalık seyri,16
+diagnosis_stage_norm,ön tanı,15
+diagnosis_stage_norm,orta,15
+diagnosis_stage_norm,hasta_durumu,15
+diagnosis_stage_norm,şikayet,14
+diagnosis_stage_norm,final,13
+diagnosis_stage_norm,akut,13
+diagnosis_stage_norm,tetkik sonucu,12
+diagnosis_stage_norm,tetkik planı,12
+diagnosis_stage_norm,geçmiş,11
+diagnosis_stage_norm,kriz,11
+diagnosis_stage_norm,kritik_aşama,10
+diagnosis_stage_norm,hasta_öyküsü,10
+diagnosis_stage_norm,test sonucu,9
+diagnosis_stage_norm,semptom_belirtme,9
+diagnosis_stage_norm,prosedür_planı,9
+diagnosis_stage_norm,hastalık_mekanizması,9
+diagnosis_stage_norm,acil_müdahale,8
+diagnosis_stage_norm,tetkik_aşaması,7
+diagnosis_stage_norm,durum_özeti,7
+diagnosis_stage_norm,sonuç / kesin tanı,7
+diagnosis_stage_norm,klinik,6
+diagnosis_stage_norm,tedavi planı,6
+diagnosis_stage_norm,test_aşaması,6
+diagnosis_stage_norm,test_isteme,6
+diagnosis_stage_norm,ilk tanı,5
+diagnosis_stage_norm,onay,5
+diagnosis_stage_norm,prognoz,5
+diagnosis_stage_norm,terminal,5
+diagnosis_stage_norm,izleme,5
+diagnosis_stage_norm,semptom_keşfi,5
+diagnosis_stage_norm,acil durum,5
+diagnosis_stage_norm,teşhis doğrulamak,4
+diagnosis_stage_norm,risk,4
+diagnosis_stage_norm,öykü,4
+diagnosis_stage_norm,hikaye,4
+diagnosis_stage_norm,ilk_tetkik,4
+diagnosis_stage_norm,başlangıç / şikayet,4
+diagnosis_stage_norm,ameliyat,3
+diagnosis_stage_norm,panik,3
+diagnosis_stage_norm,uyarı,3
+diagnosis_stage_norm,önlem,3
+diagnosis_stage_norm,plan,3
+diagnosis_stage_norm,belge,3
+diagnosis_stage_norm,durum,3
+diagnosis_stage_norm,hasta öyküsü,3
+diagnosis_stage_norm,karar,2
+diagnosis_stage_norm,arrest,2
+diagnosis_stage_norm,post_op,2
+diagnosis_stage_norm,bilgi verici,2
+diagnosis_stage_norm,tıbbi müdahale,2
+diagnosis_stage_norm,prosedür_bilgisi,2
+diagnosis_stage_norm,tedavi_riski,2
+diagnosis_stage_norm,psikiyatrik_durum,2
+diagnosis_stage_norm,tedavi_süreci,2
+diagnosis_stage_norm,ilk tanıyı reddetmek,1
+diagnosis_stage_norm,teşhisi doğrulamak,1
+diagnosis_stage_norm,ameliyat sonrası,1
+diagnosis_stage_norm,polis,1
+diagnosis_stage_norm,iyileşme,1
+diagnosis_stage_norm,otopsi,1
+diagnosis_stage_norm,post_mortem,1
+diagnosis_stage_norm,tanı_öncesi,1
+diagnosis_stage_norm,deneysel_aşama,1
+diagnosis_stage_norm,cerrahi,1
+diagnosis_stage_norm,deneysel_tedavi,1
+diagnosis_stage_norm,ukala,1
+diagnosis_stage_norm,0,1
+diagnosis_stage_norm,itiraf,1
+diagnosis_stage_norm,tedavi sonucu,1
+diagnosis_stage_norm,endişe,1
+diagnosis_stage_norm,savunma,1
+diagnosis_stage_norm,alternatif_tedavi,1
+diagnosis_stage_norm,teşhis_sorgusu,1
+diagnosis_stage_norm,prosedür_amacı,1
+diagnosis_stage_norm,tedavi_komplikasyonu,1
+diagnosis_stage_norm,yeni_hipotez,1
+diagnosis_stage_norm,hastalık_ilerlemesi,1
+diagnosis_stage_norm,tedavi_reddi,1
+diagnosis_stage_norm,etik_sorun,1
+diagnosis_stage_norm,yalan_teşhis,1
+diagnosis_stage_norm,yalan_kanıt,1
+diagnosis_stage_norm,durum_bildirimi,1
+diagnosis_stage_norm,semptom_yorumu,1
+diagnosis_stage_norm,tedavi / test,1
+diagnosis_stage_norm,acil durum / ameliyat,1
+diagnosis_stage_norm,hastalık seyri / tedavi,1
+diagnosis_stage_norm,poliklinik / şikayet,1
+diagnosis_stage_norm,poliklinik / sonuç,1
+diagnosis_stage_norm,kesin tanı,1
+diagnosis_stage_norm,test / tedavi,1
+organ_norm,unknown,2525
+organ_norm,beyin,741
+organ_norm,kalp,504
+organ_norm,akciğer,358
+organ_norm,kan,250
+organ_norm,karaciğer,209
+organ_norm,genel,152
+organ_norm,böbrek,133
+organ_norm,mide,89
+organ_norm,bacak,78
+organ_norm,bağırsak,74
+organ_norm,göz,71
+organ_norm,nötr,64
+organ_norm,sinir sistemi,58
+organ_norm,damar,56
+organ_norm,deri,55
+organ_norm,tüm vücut,46
+organ_norm,kol,40
+organ_norm,pankreas,38
+organ_norm,omurilik,36
+organ_norm,cilt,35
+organ_norm,karın,35
+organ_norm,sinir,35
+organ_norm,göğüs,31
+organ_norm,kas,31
+organ_norm,kemik,30
+organ_norm,bağışıklık sistemi,29
+organ_norm,bağışıklık,25
+organ_norm,burun,24
+organ_norm,kulak,22
+organ_norm,boyun,21
+organ_norm,akciğerler,20
+organ_norm,kemik iliği,19
+organ_norm,el,19
+organ_norm,kolon,19
+organ_norm,boğaz,18
+organ_norm,dalak,18
+organ_norm,endokrin,17
+organ_norm,ağız,17
+organ_norm,heart,17
+organ_norm,solunum,16
+organ_norm,mesane,16
+organ_norm,cns,16
+organ_norm,omurga,15
+organ_norm,"kalp, akciğer",14
+organ_norm,çoklu_sistem,14
+organ_norm,tiroid,13
+organ_norm,systemic,13
+organ_norm,safra kesesi,12
+organ_norm,böbrekler,12
+organ_norm,hipofiz,11
+organ_norm,genetik,10
+organ_norm,testis,10
+organ_norm,liver,10
+organ_norm,doku,9
+organ_norm,eklem,9
+organ_norm,solunum sistemi,9
+organ_norm,uterus,8
+organ_norm,rahim,8
+organ_norm,damarlar,8
+organ_norm,organ,8
+organ_norm,kalp; damar,8
+organ_norm,meme,7
+organ_norm,over,7
+organ_norm,genetics,7
+organ_norm,ayak,7
+organ_norm,lenf,7
+organ_norm,fetüs,7
+organ_norm,arter,7
+organ_norm,iç kulak,7
+organ_norm,panik,6
+organ_norm,kalça,6
+organ_norm,koltuk altı,6
+organ_norm,aorta,6
+organ_norm,nervous system,6
+organ_norm,"beyin, omurilik",6
+organ_norm,sırt,6
+organ_norm,kafa,6
+organ_norm,"karaciğer,beyin",5
+organ_norm,"hipofiz,endokrin",5
+organ_norm,çene,5
+organ_norm,yüz,5
+organ_norm,gi,5
+organ_norm,immune system,5
+organ_norm,üreme,5
+organ_norm,eklemler,5
+organ_norm,zihin,5
+organ_norm,alaycı,4
+organ_norm,kaygılı,4
+organ_norm,"göz, kan",4
+organ_norm,temporal lob,4
+organ_norm,adrenal,4
+organ_norm,"beyin, kan",4
+organ_norm,"akciğer, kalp",4
+organ_norm,gastrointestinal sistem,4
+organ_norm,baş,4
+organ_norm,üriner sistem,4
+organ_norm,intestines,4
+organ_norm,eyes,4
+organ_norm,tükürük bezi,4
+organ_norm,bacaklar,4
+organ_norm,immün sistem,4
+organ_norm,lenf nodları,4
+organ_norm,akciğerler ve kalp,4
+organ_norm,tüm organlar,4
+organ_norm,bel,4
+organ_norm,bağırsaklar,4
+organ_norm,denge sistemi ve beyin,4
+organ_norm,sindirim sistemi,4
+organ_norm,çoklu organ,4
+organ_norm,batın,4
+organ_norm,çok organik,4
+organ_norm,"kalp,akciğer",3
+organ_norm,"böbrek, karaciğer",3
+organ_norm,"karaciğer, beyin",3
+organ_norm,"karaciğer,bağırsak",3
+organ_norm,"kalp,endokrin",3
+organ_norm,"deri,endokrin",3
+organ_norm,"deri,kan",3
+organ_norm,özofagus,3
+organ_norm,timus bezi,3
+organ_norm,"akciğer, kan",3
+organ_norm,genital bölge,3
+organ_norm,"beyin, kalp",3
+organ_norm,"kalp, beyin",3
+organ_norm,"el, parmak",3
+organ_norm,lenf düğümü,3
+organ_norm,"karaciğer, böbrek",3
+organ_norm,beyin zarı,3
+organ_norm,hipotalamus,3
+organ_norm,sistemik,3
+organ_norm,blood,3
+organ_norm,heart/lungs,3
+organ_norm,leg,3
+organ_norm,liver/kidneys,3
+organ_norm,kalp; beyin,3
+organ_norm,kafatası,3
+organ_norm,"dalak, karaciğer",3
+organ_norm,"burun, kalp",3
+organ_norm,"kalp, karaciğer",3
+organ_norm,"karaciğer, kalp",3
+organ_norm,bağışıklık sistemi ve solunum,3
+organ_norm,aort ve kalp,3
+organ_norm,vücut,3
+organ_norm,beyin sapı,3
+organ_norm,kan damarları,3
+organ_norm,başparmak,3
+organ_norm,böbreküstü bezi,3
+organ_norm,akciğer; kalp,3
+organ_norm,beyin; sinir sistemi,3
+organ_norm,beyin; kalp,3
+organ_norm,beyin; damar,3
+organ_norm,"ayak, bacak",3
+organ_norm,adrenal bezler,3
+organ_norm,"bacak,beyin",2
+organ_norm,parmaklar,2
+organ_norm,empati,2
+organ_norm,akciğer/omurilik,2
+organ_norm,"kalp,mide",2
+organ_norm,"akciğer,kalp",2
+organ_norm,"beyin,karaciğer",2
+organ_norm,"endokrin,hipofiz",2
+organ_norm,"hipofiz,beyin",2
+organ_norm,"beyin,endokrin",2
+organ_norm,"meme,deri",2
+organ_norm,"menenjler, beyin",2
+organ_norm,"kan, akciğer",2
+organ_norm,aort,2
+organ_norm,mitral kapak,2
+organ_norm,göğüs kafesi,2
+organ_norm,servikal omurga,2
+organ_norm,"kan, beyin",2
+organ_norm,otonom sinir sistemi,2
+organ_norm,"beyin, beyin omurilik sıvısı",2
+organ_norm,"pankreas, kan",2
+organ_norm,iris,2
+organ_norm,genital,2
+organ_norm,hormon,2
+organ_norm,üreme sistemi,2
+organ_norm,kaslar,2
+organ_norm,kalp/akciğer,2
+organ_norm,"femur, kemik iliği",2
+organ_norm,respiratory,2
+organ_norm,eye,2
+organ_norm,genitals,2
+organ_norm,skin,2
+organ_norm,brain stem,2
+organ_norm,multi-organ,2
+organ_norm,lymph nodes,2
+organ_norm,kulak; iç kulak,2
+organ_norm,karaciğer; mesane,2
+organ_norm,arterler,2
+organ_norm,idrar,2
+organ_norm,hücre,2
+organ_norm,sindirim,2
+organ_norm,yumurtalık,2
+organ_norm,sinüsler,2
+organ_norm,idrar yolları,2
+organ_norm,"göz, damar",2
+organ_norm,"sinir, kas",2
+organ_norm,"mide, kalp",2
+organ_norm,"beyin, göz",2
+organ_norm,hava yolları,2
+organ_norm,lenf bezleri,2
+organ_norm,"solunum yolu, lenf nodları",2
+organ_norm,apandis,2
+organ_norm,"böbrek, akciğer",2
+organ_norm,denge sistemi,2
+organ_norm,kulaklar,2
+organ_norm,gözler,2
+organ_norm,gözler ve beyin,2
+organ_norm,kornea,2
+organ_norm,hepatik ven,2
+organ_norm,dudak,2
+organ_norm,uyluk,2
+organ_norm,gırtlak,2
+organ_norm,prostat,2
+organ_norm,böbrek üstü bezi,2
+organ_norm,eller,2
+organ_norm,abdomen,2
+organ_norm,böbrek üstü,2
+organ_norm,safra yolları,2
+organ_norm,"akciğer, böbrek",2
+organ_norm,"beyin, böbrek",2
+organ_norm,"göğüs, sırt",2
+organ_norm,karotis,2
+organ_norm,"kalp, kulak",2
+organ_norm,"kalp, böbrek",2
+organ_norm,parmak,2
+organ_norm,"cilt, beyin",2
+organ_norm,kafa; beyin,2
+organ_norm,kan; beyin,2
+organ_norm,hipotalamus; böbrek,2
+organ_norm,kalp; akciğer,2
+organ_norm,beyin; psikoloji,2
+organ_norm,psikoloji,2
+organ_norm,psikoloji; bağımlılık,2
+organ_norm,kan; damar,2
+organ_norm,"beyin, mide",2
+organ_norm,"sırt, el",2
+organ_norm,safra kanalları,2
+organ_norm,bronş,2
+organ_norm,"kan, beyin, omurilik",2
+organ_norm,mide-bağırsak sistemi,2
+organ_norm,hava yolu,2
+organ_norm,ayak parmakları,2
+organ_norm,beyincik,2
+organ_norm,"kalp,akciğer,karaciğer",2
+organ_norm,karaciğeri,2
+organ_norm,"beyin sapı,solunum merkezi",1
+organ_norm,"bağırsak,kan dolaşımı",1
+organ_norm,"bacak,uyluk kası",1
+organ_norm,"beyin,göz",1
+organ_norm,"karaciğer,böbrek,beyin",1
+organ_norm,"beyin,ayak parmakları",1
+organ_norm,"omurga,beyin",1
+organ_norm,"ventrikül,beyin omurilik sıvısı",1
+organ_norm,beyin omurilik sıvısı,1
+organ_norm,"beyin,omurga",1
+organ_norm,"beyin,beyin sapı",1
+organ_norm,"beyin,kalp,karaciğer",1
+organ_norm,"hipofiz,adrenal bez",1
+organ_norm,"akciğer,böbrek",1
+organ_norm,"kalp,bağırsak",1
+organ_norm,"böbrek,karaciğer",1
+organ_norm,"kalp, akciğer, deri",1
+organ_norm,"akciğer, göz",1
+organ_norm,gis,1
+organ_norm,diyafram,1
+organ_norm,"meme, beyin",1
+organ_norm,"akciğer, kemik",1
+organ_norm,akciğer/sinir sistemi,1
+organ_norm,"böbrek, beyin",1
+organ_norm,"mide,kalp",1
+organ_norm,"akciğer,boğaz",1
+organ_norm,"omurga,bacak",1
+organ_norm,"kemik,bacak",1
+organ_norm,"göğüs,kalp",1
+organ_norm,psikiyatri,1
+organ_norm,"psikiyatri,kalp",1
+organ_norm,"endokrin,karaciğer",1
+organ_norm,"akciğer,beyin",1
+organ_norm,"karaciğer,endokrin",1
+organ_norm,"bağırsak,karaciğer",1
+organ_norm,"pankreas,endokrin",1
+organ_norm,"hipofiz,kalp,deri",1
+organ_norm,"kalp,kan",1
+organ_norm,"kalp,deri,hipofiz",1
+organ_norm,"beyin, sağ taraf",1
+organ_norm,"koltuk altı, boyun, kasık, karaciğer",1
+organ_norm,"böbrek, karaciğer, lenf nodları",1
+organ_norm,"karaciğer, böbrek, beyin",1
+organ_norm,"akciğer, böbrek, karaciğer, beyin",1
+organ_norm,"prostat, rektum",1
+organ_norm,diş eti,1
+organ_norm,menenjler,1
+organ_norm,"böbrek, adrenal bez",1
+organ_norm,"deri, kan",1
+organ_norm,"karın, beyin, böbrek",1
+organ_norm,kan testi,1
+organ_norm,"el, dudak",1
+organ_norm,"genel, burun",1
+organ_norm,"kan, beyin omurilik sıvısı",1
+organ_norm,vena kava,1
+organ_norm,"kalp, akciğer, kan",1
+organ_norm,"omurga, göğüs kafesi",1
+organ_norm,"vena femoralis, akciğer",1
+organ_norm,"serebral korteks, sinir sistemi",1
+organ_norm,triküspit kapak,1
+organ_norm,"kalp, perikard",1
+organ_norm,"göz, damar sistemi",1
+organ_norm,kaburga,1
+organ_norm,"ulnar sinir, kol damarı",1
+organ_norm,"omurga, kan",1
+organ_norm,"böbrek, mesane",1
+organ_norm,ürogenital sistem,1
+organ_norm,"kalp, otonom sinir sistemi",1
+organ_norm,kalp iletim sistemi,1
+organ_norm,"kalp, pankreas",1
+organ_norm,"sinüsler, burun",1
+organ_norm,"solunum sistemi, burun",1
+organ_norm,kraniyal sinir,1
+organ_norm,anal sfinkter,1
+organ_norm,"servikal, torasik, lomber omurga",1
+organ_norm,"mide, karın",1
+organ_norm,sigmoid kolon,1
+organ_norm,merkezi sinir sistemi,1
+organ_norm,"boyun, çene",1
+organ_norm,"kas, sinir",1
+organ_norm,"kan, kas",1
+organ_norm,"bacak, kan",1
+organ_norm,"akciğer, kan damarı",1
+organ_norm,idrar yolu,1
+organ_norm,"yüz, akciğer",1
+organ_norm,"kulak, akciğer, beyin sapı",1
+organ_norm,"eklem, mide",1
+organ_norm,"damar, mide",1
+organ_norm,dışkı,1
+organ_norm,"kan, karaciğer",1
+organ_norm,"karaciğer, hepatik arter",1
+organ_norm,"göğüs, kan",1
+organ_norm,apartman,1
+organ_norm,çatı,1
+organ_norm,uzuvlar,1
+organ_norm,hemokromatozis,1
+organ_norm,dil,1
+organ_norm,solunum yolu,1
+organ_norm,"kas, saç, tırnak",1
+organ_norm,"omurilik, beyin",1
+organ_norm,"hipotalamus, hipofiz, adrenal bez",1
+organ_norm,rektum,1
+organ_norm,önkol,1
+organ_norm,parietal talamik alan,1
+organ_norm,organlar,1
+organ_norm,"beyin, kalp, göz",1
+organ_norm,"retina, göz",1
+organ_norm,"femoral arter, kalp, retina, göz bebeği",1
+organ_norm,ulna,1
+organ_norm,"femoral arter, kalp",1
+organ_norm,retina,1
+organ_norm,laboratuvar,1
+organ_norm,"sol bacak,karın,sağ kol",1
+organ_norm,periferik sinir sistemi,1
+organ_norm,"akciğer,böbrek,kemik iliği",1
+organ_norm,vascular system,1
+organ_norm,lymph node,1
+organ_norm,lymphatic system,1
+organ_norm,digestive system,1
+organ_norm,brain/liver/lung,1
+organ_norm,brain/eyes,1
+organ_norm,eye/gut,1
+organ_norm,appendix,1
+organ_norm,abdomen/liver,1
+organ_norm,gall bladder/appendix,1
+organ_norm,rectum/body temp,1
+organ_norm,cardiovascular,1
+organ_norm,chest/stomach,1
+organ_norm,liver/bladder,1
+organ_norm,bowel,1
+organ_norm,blood oxygen,1
+organ_norm,rectum,1
+organ_norm,pancreas,1
+organ_norm,spine,1
+organ_norm,adrenal glands,1
+organ_norm,gut,1
+organ_norm,heart/intestines,1
+organ_norm,hands,1
+organ_norm,bones,1
+organ_norm,scripts,1
+organ_norm,fat,1
+organ_norm,eyes/brain,1
+organ_norm,lungs/brain,1
+organ_norm,stomach,1
+organ_norm,liver/lungs,1
+organ_norm,kidneys/liver,1
+organ_norm,neck/heart,1
+organ_norm,brain/heart,1
+organ_norm,kidneys,1
+organ_norm,psychological,1
+organ_norm,muscles,1
+organ_norm,kalp damarları,1
+organ_norm,kulak; burun,1
+organ_norm,safra kanalı; pankreas,1
+organ_norm,safra yolları; karaciğer,1
+organ_norm,kulak; bağırsak; eklem,1
+organ_norm,karaciğer; safra yolları,1
+organ_norm,akciğer; ven,1
+organ_norm,akciğer; karaciğer; mesane; dalak,1
+organ_norm,ven; karaciğer,1
+organ_norm,sinir sistemi; kafatası,1
+organ_norm,karaciğer; beyin,1
+organ_norm,temporal lob; orta beyin,1
+organ_norm,kalp; arterler,1
+organ_norm,uyku,1
+organ_norm,"göz , karaciğer",1
+organ_norm,beyin akciğer karaciğer,1
+organ_norm,beyin kol kalp,1
+organ_norm,bacak omuz,1
+organ_norm,tüm vücüt,1
+organ_norm,beyin dokusu,1
+organ_norm,"baş, kalp",1
+organ_norm,"solunum, ses telleri",1
+organ_norm,"karın, solunum",1
+organ_norm,"damar, kalp",1
+organ_norm,"beyin sapı, akciğer",1
+organ_norm,"kan, cilt",1
+organ_norm,"omurga, sinir",1
+organ_norm,talyum zehirlenmesi,1
+organ_norm,"böbrek, sinir",1
+organ_norm,"cilt, kalp",1
+organ_norm,"lenf, beyin",1
+organ_norm,"karın, kalp",1
+organ_norm,"damar, karaciğer",1
+organ_norm,"burun, akciğer",1
+organ_norm,"cilt, kas",1
+organ_norm,"karaciğer, bağışıklık",1
+organ_norm,"kas, parmak",1
+organ_norm,"kalp, bağışıklık",1
+organ_norm,"göğüs, kollar",1
+organ_norm,"karaciğer, bağırsak",1
+organ_norm,"bağırsak, kalp",1
+organ_norm,"sindirim sistemi, dalak",1
+organ_norm,"bağırsak, dalak",1
+organ_norm,"kalp, burun",1
+organ_norm,"kalp, damarlar",1
+organ_norm,dişler,1
+organ_norm,"kalp, arterler",1
+organ_norm,"adrenal bez, kan",1
+organ_norm,"böbrekler, beyin",1
+organ_norm,deri altı yağ dokusu,1
+organ_norm,"akciğer, böbrek, karaciğer",1
+organ_norm,"dalak, kan",1
+organ_norm,"göğüs, boyun",1
+organ_norm,"kan, çoklu organ",1
+organ_norm,"immün sistem, kan",1
+organ_norm,"göğüs, bağırsak, idrar yolu",1
+organ_norm,"akciğer, sindirim sistemi",1
+organ_norm,"akciğer, boğaz, sindirim sistemi",1
+organ_norm,"kalp, damar",1
+organ_norm,"damar, trakea",1
+organ_norm,"lenf bezleri, damar",1
+organ_norm,"immün sistem, lenf bezleri",1
+organ_norm,"beyin, sinir hücreleri",1
+organ_norm,"kol, el",1
+organ_norm,"el, sinir sistemi",1
+organ_norm,"el, göz",1
+organ_norm,"cilt, boğaz",1
+organ_norm,"kan, kemik iliği",1
+organ_norm,"göğüs, tümör bölgesi",1
+organ_norm,"bacak, arter",1
+organ_norm,"kan, ayak",1
+organ_norm,"apandis, safra kesesi, böbrek",1
+organ_norm,"böbrek, safra kesesi",1
+organ_norm,"kol, damar",1
+organ_norm,nefes borusu,1
+organ_norm,"akciğer, nefes borusu",1
+organ_norm,"boyun, lenf nodları",1
+organ_norm,"böbrek, akciğer, beyin",1
+organ_norm,kalp ve akciğer,1
+organ_norm,gözler ve baş,1
+organ_norm,mide ve bağırsak,1
+organ_norm,kollar ve sinirler,1
+organ_norm,kalp ve damarlar,1
+organ_norm,karın organları,1
+organ_norm,diz,1
+organ_norm,sinirler,1
+organ_norm,kemikler,1
+organ_norm,cilt ve saç,1
+organ_norm,gözler ve pankreas,1
+organ_norm,bel ve bacaklar,1
+organ_norm,femoral arter,1
+organ_norm,kalp/akciğer/karaciğer/pankreas,1
+organ_norm,kalp/akciğer/beyin,1
+organ_norm,akciğer/pankreas,1
+organ_norm,solunum yolu/kalp,1
+organ_norm,bağırsak/damar,1
+organ_norm,beyin/kalp/akciğer/karaciğer/pankreas,1
+organ_norm,beyin/genetik,1
+organ_norm,göz/beyin,1
+organ_norm,kalp/akciğer/pankreas,1
+organ_norm,beyin/göz,1
+organ_norm,diş,1
+organ_norm,tükürük bezleri,1
+organ_norm,bezler,1
+organ_norm,sinüs,1
+organ_norm,plasenta,1
+organ_norm,gözenekler,1
+organ_norm,ev,1
+organ_norm,onikiparmak bağırsağı,1
+organ_norm,hip,1
+organ_norm,"mide, akciğer",1
+organ_norm,"hava yolu, özofagus",1
+organ_norm,"akciğer, karaciğer",1
+organ_norm,"göz, beyin",1
+organ_norm,"omurilik, akciğer, karaciğer",1
+organ_norm,"akciğer, omurga",1
+organ_norm,"akciğer, omurga, perikard",1
+organ_norm,"göz, burun",1
+organ_norm,"uterus, akciğer, karaciğer, omurga",1
+organ_norm,"uterus, akciğer, karaciğer",1
+organ_norm,"deri, sinir",1
+organ_norm,"kalp, karaciğer, böbrek",1
+organ_norm,anatomy,1
+organ_norm,tiroit,1
+organ_norm,el; ayak,1
+organ_norm,"kulak, beyin",1
+organ_norm,işitme siniri,1
+organ_norm,"göz, kalp",1
+organ_norm,sinüs düğümü,1
+organ_norm,yağ hücreleri,1
+organ_norm,"kemik, disk",1
+organ_norm,"omurga, kalp",1
+organ_norm,"kalp, eller",1
+organ_norm,böbreküstü bezleri,1
+organ_norm,"kemik, böbrek",1
+organ_norm,"karaciğer, yemek borusu",1
+organ_norm,"karaciğer, kalp, beyin",1
+organ_norm,tırnak,1
+organ_norm,nöron,1
+organ_norm,ayak bileği,1
+organ_norm,"beyin, hipofiz",1
+organ_norm,"kan, kalp, beyin",1
+organ_norm,"parmak, beyin, kalp",1
+organ_norm,"karaciğer, dalak",1
+organ_norm,"beyin, karaciğer, kalp",1
+organ_norm,"karaciğer, lenf düğümü",1
+organ_norm,"deri, kemik",1
+organ_norm,"böbrek, kalp",1
+organ_norm,"kalp, barsak",1
+organ_norm,"kalp, göz",1
+organ_norm,"böbrek, kas",1
+organ_norm,kalp; bağırsak,1
+organ_norm,kalp; sinir sistemi; bağırsak,1
+organ_norm,beyin; omurilik,1
+organ_norm,sinir sistemi; sindirim sistemi,1
+organ_norm,eklem; kalp; böbrek,1
+organ_norm,damar; böbrek; kalp; deri,1
+organ_norm,kalp; böbrek; deri,1
+organ_norm,böbrek; karaciğer,1
+organ_norm,beyin; ses telleri; kalp,1
+organ_norm,sinir sistemi; beyin,1
+organ_norm,bağ doku,1
+organ_norm,mitokondri,1
+organ_norm,tiroit; pitüiter bez,1
+organ_norm,pitüiter bez,1
+organ_norm,damar; sinir sistemi,1
+organ_norm,kalp; damar; sinir sistemi,1
+organ_norm,beyin; kafatası,1
+organ_norm,beyin; ses telleri,1
+organ_norm,beyin; mesane,1
+organ_norm,cilt; bağışıklık sistemi,1
+organ_norm,kas; eklem,1
+organ_norm,psikoloji; hukuk,1
+organ_norm,onkoloji,1
+organ_norm,sinir sistemi; bacak,1
+organ_norm,damar; ayak,1
+organ_norm,yara,1
+organ_norm,kas; böbrek,1
+organ_norm,kas; böbrek; kalp,1
+organ_norm,kalp; akciğer; damar,1
+organ_norm,akciğer; kan,1
+organ_norm,kas; damar,1
+organ_norm,kas; sinir sistemi,1
+organ_norm,akciğer; psikoloji,1
+organ_norm,beyin; kan,1
+organ_norm,kafa; yüz,1
+organ_norm,psikoloji; kalp; damar,1
+organ_norm,omuz; bağımlılık,1
+organ_norm,psikoloji; beyin,1
+organ_norm,kas; bacak,1
+organ_norm,kas; psikoloji,1
+organ_norm,"bacak, beyin",1
+organ_norm,"karaciğer, mide",1
+organ_norm,"kalp, böbrek, akciğer",1
+organ_norm,"kulak, göğüs",1
+organ_norm,"el, sırt",1
+organ_norm,"eklem, beyin",1
+organ_norm,"tiroid, boyun",1
+organ_norm,kalp kapakçıkları,1
+organ_norm,"karaciğer, safra kanalları",1
+organ_norm,kanallar,1
+organ_norm,safra kanalı,1
+organ_norm,sistik kanal,1
+organ_norm,"karaciğer, kan",1
+organ_norm,portal ven,1
+organ_norm,"boyun, karın",1
+organ_norm,"karaciğer, böbrek, akciğer",1
+organ_norm,kanal,1
+organ_norm,"safra kesesi, karaciğer",1
+organ_norm,"diz, ayak bileği, omuz, eklem",1
+organ_norm,"avuç içleri, ayak tabanları",1
+organ_norm,el/ayak,1
+organ_norm,omuz,1
+organ_norm,"cilt, akciğer",1
+organ_norm,"cilt, göz",1
+organ_norm,"göz, eklem",1
+organ_norm,"beyin, baş",1
+organ_norm,"uzuv, omurga, kafatası",1
+organ_norm,"diyafram, göğüs kemiği, burun, kulak",1
+organ_norm,"mide-bağırsak sistemi, parotis",1
+organ_norm,"göz, karaciğer",1
+organ_norm,"baş, ayak, kalp, beyin",1
+organ_norm,"kalp, kaburga",1
+organ_norm,"koku siniri, optik sinir, beyin",1
+organ_norm,parietal korteks,1
+organ_norm,"göğüs, akciğer",1
+organ_norm,skrotum,1
+organ_norm,alyuvarlar,1
+organ_norm,ulnar arter,1
+organ_norm,baziler arter,1
+organ_norm,pineal bez,1
+organ_norm,böbrek sinirleri,1
+organ_norm,humerus,1
+organ_norm,kol kemiği,1
+organ_norm,"böbrek,kalın bağırsak",1
+organ_norm,kalın bağırsak,1
+organ_norm,diş etleri,1
+organ_norm,aksiller arter,1
+organ_norm,çölyak arter,1
+organ_norm,saç,1
+organ_norm,bilek,1
+organ_norm,kaş,1
+organ_norm,bronşlar,1
+organ_norm,bacak kasları,1
+organ_norm,ince bağırsak,1
+organ_norm,"kalp, akciğerler",1
+organ_norm,göz bebekleri,1
+organ_norm,oksipital lobunuz,1
+organ_norm,sol alt lobunda,1
+organ_norm,koroner arterleri,1
+organ_norm,sağ atriyum,1
+organ_norm,boyun damarları,1
+organ_norm,"kalbi, beyni",1
+organ_norm,"kan, kan damarları",1
+organ_norm,"parafaringeal boşluk, şah damarı",1
+organ_norm,"sklera, karaciğer",1
+organ_norm,"beyin, anterior komünikan arter",1

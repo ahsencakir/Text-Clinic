@@ -1,0 +1,126 @@
+text_clean,intent_norm,prediction,task,emotion_norm,sarcasm_label,diagnosis_stage_norm,organ_norm
+tansiyon düşüyor.,acil,açıklama,intent_norm,,,,
+lüppe lüppe akciğerleri isviçre peyniri gibi olmuş.,acil,açıklama,intent_norm,,,,
+yüksek ateş kontrol altına alınmalı.,acil,açıklama,intent_norm,,,,
+leona! herkesi yutan bir su akıntısı gördü. bayıldı!,acil,açıklama,intent_norm,,,,
+halüsinasyon görüyor.,açıklama,açıklama,intent_norm,,,,
+laktüloz başladık ama karaciğer fonksiyonları bu hızla bozulursa bir gün içinde ölebilir.,açıklama,açıklama,intent_norm,,,,
+üzerinde kimliği yok. sadece koşu kıyafetleri ve nabız monitörü. hakkında hiçbir şey bilmiyoruz.,açıklama,açıklama,intent_norm,,,,
+"aspirin alıyorum. bir şeye odaklanıyorum, yemeyi unutuyorum, baş ağrısı oluyor.",açıklama,açıklama,intent_norm,,,,
+"tamam, kazandın. venogramı şimdi yapıyoruz. sonrasını sonra düşünürüz.",açıklama,açıklama,intent_norm,,,,
+"dopamin reseptörleri kapalı olan birinin kokain içmesi, hissetmek için verilen bir çabadır.",açıklama,açıklama,intent_norm,,,,
+nitro kullanımı kalbin yükünü azaltır ama böbrek fonksiyonlarını tehlikeye atıyor.,açıklama,açıklama,intent_norm,,,,
+biyopsi deri damarlarındaki iltihabı doğruladı; teşhis wegener granülomatozu.,açıklama,hipotez,intent_norm,,,,
+bence bu bir mantardan gelen iltihap (irin).,açıklama,hipotez,intent_norm,,,,
+küçük hücreli akciğer kanseri.,açıklama,açıklama,intent_norm,,,,
+"bu sadece beyninin işlem hızını ölçmekle kalmaz, ilk üç ay ücretsiz kablo da sağlar.",açıklama,açıklama,intent_norm,,,,
+"salya akıtmıyor, başını dik tutabiliyor ve yemek yerken boğulmuyor; boğazı sandığınız kadar kötü değil.",açıklama,açıklama,intent_norm,,,,
+"nöbetleri, el ve sırt ağrısını, ayrıca depresyonu açıklıyor.",açıklama,açıklama,intent_norm,,,,
+"sizi vaskülit için tedavi ediyoruz; bu, beyindeki damarların iltihaplanması demek.",açıklama,açıklama,intent_norm,,,,
+ancak aritmiye neyin sebep olduğunu hala bulmamız gerekiyor.,açıklama,açıklama,intent_norm,,,,
+sistoskopi yapmalıyız. mesane ve üreter yapısını değerlendirmek şart.,açıklama,hipotez,intent_norm,,,,
+iğneler cerrahi operasyonla çıkarılacak ve hasta tamamen sağlığına kavuşacak.,açıklama,açıklama,intent_norm,,,,
+29 yaşında bir kadın hasta; ilk nöbetini bir ay önce geçirmiş.,açıklama,açıklama,intent_norm,,,,
+uyumlu bir karaciğer bulduk.,açıklama,açıklama,intent_norm,,,,
+akut intermitan porfiri daha iyi uyuyor.,açıklama,hipotez,intent_norm,,,,
+nefes almakta giderek daha çok zorlanıyorum.,açıklama,açıklama,intent_norm,,,,
+"yan ağrısı var, böbrekleri iflas ediyor.",,nötr,emotion_norm,acil,,,
+kalbini yeniden başlatacağız.,,nötr,emotion_norm,acil,,,
+en yaygın olanı aspergillus. onu vorikonazol damlasına bağlayın,,nötr,emotion_norm,acil,,,
+cerrahlar 3 ünite ab pozitif kan verdiler ama hâlâ kanama odağını arıyorlar.,,nötr,emotion_norm,acil,,,
+kalbini yeniden başlatmak onu öldürebilir.,,nötr,emotion_norm,acil,,,
+solunum sıkıntısı çok ileri düzeyde; bir damar varsa ve hemen çıkarmazsak en iyi ihtimalle hayatının sonuna kadar solunum cihazına bağlı kalır.,,nötr,emotion_norm,acil,,,
+tüm ilaçları sistemden temizlemek için hastayı diyalize alıyoruz.,,ciddi,emotion_norm,acil,,,
+"kalp hızı yükseldi, tansiyon düştü.",,ciddi,emotion_norm,acil,,,
+"eğer strüvit taşı varsa, enfeksiyon böbreklerini iflas ettirmeden önce kırılması gerekir.",,nötr,emotion_norm,acil,,,
+pervane femoral arterini kesmiş.,,nötr,emotion_norm,acil,,,
+"grey turner belirtisi, iç kanaması var.",,nötr,emotion_norm,acil,,,
+anatomik işaretleri bulamıyoruz ama kesmek zorundayız yoksa hasta nefes alamayacak.,,ciddi,emotion_norm,acil,,,
+tansiyon sistolik 50'ye düştü. kanülasyonu durdurmalısın.,,endişe,emotion_norm,acil,,,
+gastrointestinal kanama.,,nötr,emotion_norm,acil,,,
+"hasta v-tach’e giriyor, kalp ritmi ciddi şekilde bozulmuş durumda.",,nötr,emotion_norm,acil,,,
+bacağım ağrıyor ama ibuprofenin bu duruma yardım etmeyeceğini biliyorum.,,panik,emotion_norm,acı,,,
+bileğimdeki bu alçıyla haftalarca dolaşmak zorundayım.,,nötr,emotion_norm,acı,,,
+"kaslarım kasılıyor, karnımda şiddetli kramplar var.",,nötr,emotion_norm,acı,,,
+"karnım ve göğsüm. ah! tanrım, acıyor!",,nötr,emotion_norm,acı,,,
+birden başım döndü ve kusmaya başladım; bana hemen oksijen maskesini uzatın.,,endişe,emotion_norm,acı,,,
+midem beni öldürüyor; dışarı çıkma düşüncesi bile fiziksel bir acı veriyor.,,nötr,emotion_norm,acı,,,
+"ah-ah, midem! ah...",,nötr,emotion_norm,acı,,,
+zihnim fazla hızlı çalışıyor.,,nötr,emotion_norm,alaycı,,,
+aslında yeni b.u.n. ve kreatinin değerleri yüzünden seni destekledi.,,nötr,emotion_norm,alaycı,,,
+"rahatla. birkaç tövbe duası, biraz asiklovir, kısa sürede yine melekleri topluyor olursun.",,nötr,emotion_norm,alaycı,,,
+kalbini yeniden başlatmak onu öldürebilir.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+ama hastaya vasküler endotelyal büyüme faktörü verirsek...,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+herhangi bir sersemlik veya senkop raporu var mı?,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+yaşamı yaratamayız ama basınç yaratabiliriz. kardiyak iş yükünü test etmekte kullandığımız yüksek basınçlı su jetiyle kolonu çalışırken görebiliriz.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"regülatörü açabilirim. kendinizi narkotik bir sise bırakırsınız, sonuna kadar huzurla uyursunuz.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+kan hastalığı. pıhtılaşma bozukluğu.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+biyopsi sonuçları gelmeden bunun bir enfeksiyon olup olmadığını bilemeyiz.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+ani kalp krizi için acil ekg ve müdahale gerekli.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"kontrast madde zayıf böbreklerde dönüp dolaştı. kalbine, karaciğerine ve pankreasına emildi.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+maalesef kanseriniz var ve bu ölümcül.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+imkânsız. hiç kan transfüzyonu almadım. hiç damar içi uyuşturucu kullanmadım. hiç seks yapmadım.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+metabolik ya da otoimmün bir hastalık değil. kesinlikle kanser değil.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+enfeksiyon tüm vücuduna yayılmış malesef seni kimse kurtaramaz,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"bu durum enfeksiyon, toksin ya da alerjik reaksiyon olabilir.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"başından beri bunun whipple olabileceğini söylüyorum, aritmiye, titremeye ve zihinsel değişikliklere neden olur.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+kalp krizi geçirdi.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+sıradan kızamık bebekte döküntü ve yüksek ateş yapar; ama çok nadir durumlarda virüs mutasyona uğrar.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"beyinden parça alırsak iyi bir ihtimalle bitkisel hayata girebilir; duymaz, konuşamaz, hiçbir şeyi hatırlayamaz.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+kalbi iyi görünüyor. toksikoloji temiz.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+iki saat önce asetaminofen almasına rağmen ateşi çok yüksekti.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"bacağımdaki yaradan hala sızıntı geliyor, yeni bir drenaj gerekebilir.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"ateşi de geri döndü, 105'in üzerine çıktı.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"konuşma yetisini kaybetmiş, bebek gibi anlamsız sesler çıkarıyor.",,not_sarcastic,sarcasm_label,,not_sarcastic,,
+sarkoidoz bir dışlama tanısıdır.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+bunlar gece 02:45'teki beyin dalgalarınızdı. yavaş dalga uykusundan ani bir sıçrama var. bu kısmi uyku uyanıklığını gösterir. en yaygın türü somnambulizm yani uyurgezerliktir. size düşük dozda bir antidepresan reçete edeceğim.,,not_sarcastic,sarcasm_label,,not_sarcastic,,
+"""500 miligram fenitoin basın.""",,tedavi,diagnosis_stage_norm,,,acil,
+"""onu entübe edin ve hiperventile edin.""",,tedavi,diagnosis_stage_norm,,,acil,
+"""kafatasına delikler açmamız lazım.""",,test,diagnosis_stage_norm,,,acil,
+merkezi bir iv (damar yolu) lazım! kyle aniden kan öksürmeye başlıyor.,,test,diagnosis_stage_norm,,,acil,
+acil trakeotomi uygulandı.,,kritik,diagnosis_stage_norm,,,acil,
+"""böbrek yetmezliği için kreatinine bakın.""",,hipotez,diagnosis_stage_norm,,,acil,
+"""iv immünoglobulin damlasını başlatın.""",,tedavi,diagnosis_stage_norm,,,acil,
+hey! gözüne dokunma! bu bir apendektomi.,,değerlendirme,diagnosis_stage_norm,,,acil,
+"""bradikardi genetik geçebilir.""",,hipotez,diagnosis_stage_norm,,,acil,
+"""sağ göz sabitlenmiş, lateral rektus felci.""",,değerlendirme,diagnosis_stage_norm,,,acil,
+mr ve lp sonuçsuz çıktı. enfeksiyon hala ihtimal dahilinde.,,test,diagnosis_stage_norm,,,araştırma,
+bir adamı bitkisel hayattan uyandırmak. ona bir iğne yapın.,,test,diagnosis_stage_norm,,,araştırma,
+bağırsak ölmemiş. sadece genel bir şişlik ve ödem var.,,değerlendirme,diagnosis_stage_norm,,,araştırma,
+ona şunlardan birini yapın. bu nalokson. bir afyon engelleyici.,,test,diagnosis_stage_norm,,,araştırma,
+bazı pestisitler ve bir miktar alkol vardı ama toksin taraması negatif çıktı.,,test,diagnosis_stage_norm,,,araştırma,
+toksin taramasında ot (marihuana) çıktı. ottan kaynaklanan salmonella mide ağrılarını açıklar.,,ayırıcı_tanı,diagnosis_stage_norm,,,araştırma,
+mr cihazının ağırlık sınırı 200 kilo. o yüzden bt çekin. sınırı 150.,,test,diagnosis_stage_norm,,,araştırma,
+sadece amfetamin miktarı bile tehlikeli olacak.,,değerlendirme,diagnosis_stage_norm,,,araştırma,
+beyniyle ziyafet çeken küçük böcekler tatlıya geçmeden önce bir bos örneği alın.,,test,diagnosis_stage_norm,,,araştırma,
+"karısını steroidlerden ayırın. eğer ateşi çıkarsa, bunun bir enfeksiyon olduğunu anlarız.",,değerlendirme,diagnosis_stage_norm,,,araştırma,
+akciğerleri iflas ettikten sonra gaita örneğini aldım.,,değerlendirme,diagnosis_stage_norm,,,araştırma,
+evi kontrol edin. akciğer ventilasyon taraması yapın.,,test,diagnosis_stage_norm,,,araştırma,
+apse.,,hipotez,diagnosis_stage_norm,,,ayırıcı_tanı,
+"felç, düzensiz kalp atışı, ve gidip gelen karın ağrısı.",,değerlendirme,diagnosis_stage_norm,,,ayırıcı_tanı,
+muhtemelen uyuşturucu kaynaklı bir vazospazm bu,,hipotez,diagnosis_stage_norm,,,ayırıcı_tanı,
+onun yerine açık akciğer biyopsisi yaparım.,,akciğer,organ_norm,,,,akciğer
+dr. chase kalsiyumumun normal olduğunu söyledi.,,beyin,organ_norm,,,,akciğer
+beyaz balgam çıkarıyor.,,beyin,organ_norm,,,,akciğer
+ve lenfositik infiltrasyon. lam için test yaptık. pozitif çıktı.,,kan,organ_norm,,,,akciğer
+diyaliz sırasında gelişen solunum sıkıntısı otoimmün varsayımımızı zayıflatıyor.,,akciğer,organ_norm,,,,akciğer
+"akciğerlerinde sıvı var, oksijen maskesi verin; tendon ameliyatı onu daha rahat ettirebilir.",,akciğer,organ_norm,,,,akciğer
+bu da onun neredeyse akciğerini öksürmesine yol açmış olabilir.,,akciğer,organ_norm,,,,akciğer
+"hipoksiyi doğruladıktan sonra pletismografi, akciğer grafisi, bilgisayarlı tomografi ve v/q sintigrafisi istiyorum.",,akciğer,organ_norm,,,,akciğer
+psittakoz olasılığı değerlendirildi.,,beyin,organ_norm,,,,akciğer
+karbonmonoksit vazodilatördür. düşük düzey maruziyet aslında akciğer kapasitesini artırıyordu. buraya getirince kötüleşti.,,akciğer,organ_norm,,,,akciğer
+uzun dönem solunum takibi gerekecek.,,akciğer,organ_norm,,,,akciğer
+harrington öldü. mama kabı hâlâ doluydu. bodrumdaki boru komşunun evine bağlıydı.,,akciğer,organ_norm,,,,akciğer
+kirli spor salonu duşu serratia enfeksiyonu demek. akciğerlerin kırmızı bakteriyle dolu. ona levaquin başlayın.,,kan,organ_norm,,,,akciğer
+"dirençli tüberküloz suşu var, en az iki yıl levofloksasin ve streptomisin gibi antitüberküloz ilaçlar kullanmamız gerekecek.",,akciğer,organ_norm,,,,akciğer
+pulmoner fibrozis olabilir.,,akciğer,organ_norm,,,,akciğer
+bu hızla birkaç gün içinde akciğerlerine ulaşacak.,,karaciğer,organ_norm,,,,akciğer
+akciğerler ıslak. oksijen saturasyonu düşüyor. soluk tüpü takmak gerekebilir. damardan biraz furosemide verin.,,akciğer,organ_norm,,,,akciğer
+röntgende aşırı havalanma (hiperinflasyon) yok.,,kalp,organ_norm,,,,akciğer
+"oksijen satürasyonu 85, hipoksik; entübe etmemiz gerekecek.",,akciğer,organ_norm,,,,akciğer
+"akciğeri çöktü, hava alamıyor, iv kateterine ihtiyacım var!",,akciğer,organ_norm,,,,akciğer
+öyleyse pnömoni olduğunu göstermek için test yap. akciğerleri sönmeye devam ettiği için bronkoskopi yapamayız. transtrakeal aspirasyon.,,akciğer,organ_norm,,,,akciğer
+akciğer için mri yapılmalı.,,akciğer,organ_norm,,,,akciğer
+tidal hacim 1.2 litrede tutunuyor. dozu artır.,,akciğer,organ_norm,,,,akciğer
+akciğer tutulumu henüz çok şiddetli değil ancak hastanın solunumu izlenmeli.,,akciğer,organ_norm,,,,akciğer
+mitral kapakta bir büyüme var ve enfeksiyon kalbine doğru yayılıyor. bir ay antibiyotik kullanması gerekecek abisi için donör olamaz,,akciğer,organ_norm,,,,akciğer
