@@ -1,0 +1,126 @@
+text_clean,speaker,has_symptom,has_test,has_drug,has_procedure,entity_count,prediction,actual,task
+"""midede tıkalı arterioller.""",House,1,1,1,1,1.0,talep,talep,intent_norm
+o eski öksürük haplarından tekrar alabilir miyim?,Brandon,1,0,1,0,2.0,soru,soru,intent_norm
+ailesi evlatlık olduğu için bu genetik hastalığı onlardan almamış olabilir.,Kutner,0,0,0,0,1.0,hipotez,açıklama,intent_norm
+donör hepatit c pozitif bulundu.,Foreman,1,1,0,0,1.0,sonuç,tanı,intent_norm
+"onu çoktan denedik, ayrıca kanser, ms, piridoksin toksisitesi ve tüm popüler nöropatileri de eledik.",Wilson,0,0,0,0,4.0,soru sorma,açıklama,intent_norm
+bunu lomber ponksiyonla doğrulayalım.,House,0,1,0,0,1.0,karar,hipotez,intent_norm
+sistemik tepkiye yol açabilecek şiddetli alerjik reaksiyon olduğunu düşünüyoruz.,Taub,0,0,0,0,1.0,değerlendirme,açıklama,intent_norm
+üst gi kanaması. yediği veya içtiği bir şeyden olabilir. belki peptik ülser.,Terzi,1,0,0,0,2.0,soru,açıklama,intent_norm
+antifungal bir iv asacağız.,House,0,0,1,0,0.0,şaka,emir,intent_norm
+boyun kaslarındaki dejenerasyon nedeniyle skop boğazı çökertir; otomatik olarak trakeotomi gerekir.,Foreman,0,0,0,1,3.0,prosedür açıklama,açıklama,intent_norm
+abdomen tomografisi çek.,Wilson,0,1,0,0,1.0,test,talimat,intent_norm
+epo'ya asla dokunmam. çok fazla kişi inme geçirip ölüyor.,Jeff,1,0,1,0,2.0,açıklama,açıklama,intent_norm
+"27 yaşında kadın hasta, şiddetli ve aralıklı kulak ağrıları var, altı doktora görünmüş.",Foreman,1,0,0,0,2.0,açıklama,açıklama,intent_norm
+test negatif çıktı. h.i.v. yok.,Thirteen,1,1,0,0,2.0,itiraz,açıklama,intent_norm
+antimon vermeye başlayın. ve cuddy ona karaciğer bulsun.,House,0,0,1,0,1.0,talimat,tedavi,intent_norm
+rüptür oluyor. skopuyu çıkar.,Taub,0,0,0,0,1.0,soru,açıklama,intent_norm
+"bu durum döküntüye yol açıyor, cildini dekontamine etmemiz ve asidi akciğerlerine çekip çekmediğini değerlendirmemiz gerekiyor.",Masters,1,0,0,1,3.0,prosedür açıklama,hipotez,intent_norm
+karın ağrısı ve ekstremitelerdeki uyuşmayı solunum yetmezliğiyle nasıl bağdaştırırız?,Foreman,1,0,0,0,3.0,açıklama,soru,intent_norm
+"dna analizi, oğlunuzda hastalığa neden olan spesifik kromozom mutasyonu olup olmadığını gösterecek.",Cameron,0,1,0,0,2.0,test,açıklama,intent_norm
+deri testi negatifti.,Taub,0,1,0,0,1.0,test,itiraz,intent_norm
+hastayı tüm vücut radyoterapisi için hazırlayın.,House,0,0,0,1,1.0,talimat,tedavi,intent_norm
+hızlı ve geniş qrs'li ritim gelişti; hemen defibrilatörü hazırlayın.,Foreman,1,0,0,1,2.0,uyarı,talimat,intent_norm
+bu iş beni fiziksel olarak öldürüyor.,Bert,1,0,0,0,1.0,açıklama,açıklama,intent_norm
+"ya bir kanser sendromu ise, trousseau sendromu gibi? kan pıhtılarını, çok odaklı ağrıyı ve belirgin fiziksel bulgu yokluğunu açıklar.",Kutner,1,0,0,0,4.0,tanı,tanı,intent_norm
+ağrı ve ağrıyı tedavi eden ilaçlar bazen ağrı reseptörlerinin ağrı kesicileri gerçek ağrı olarak okumasına neden olur.,House,0,0,0,1,3.0,prosedür açıklama,açıklama,intent_norm
+lenfoma da olası nedenlerden biridir.,Thirteen,1,0,0,0,1.0,düşünceli,nötr,emotion_norm
+başta ya da ayaklarda belirti varsa enfeksiyon kalpte ya da beyinde olmalı.,Masters,1,0,0,0,5.0,acil,nötr,emotion_norm
+koridordaki koltuklar çok daha rahat.,Dr. Cameron,1,1,1,1,1.0,yorgunluk,yorgunluk,emotion_norm
+normal sinüs ritmi.,Thirteen,0,0,0,1,2.0,acil,nötr,emotion_norm
+onu hasta eden deodorant olamaz. deodorant kullanmaz.,Landon,0,0,0,0,0.0,nötr,alaycı,emotion_norm
+komaya giriyor. tüm fonksiyonları duruyor.,Taub,1,0,0,0,6.0,düşünceli,endişe,emotion_norm
+"yalan söylüyor. rem uykusu olmadan nöronların rejenerasyonu durur. beyin lob lob kapanır. beş gün sonra delirirdi, on günde ölürdü.",House,0,0,0,0,3.0,kararlı,nötr,emotion_norm
+"bu böcek ilacı zehirlenmesi olabilir, sodyum bikarbonat ile tedavi edilebilir.",House,1,0,1,0,2.0,alaycı,nötr,emotion_norm
+donörlerden biri donörden bir gün önce fıstık yemişse bu akciğerlerdeki durumu açıklayabilir.,Wilson,1,0,0,0,2.0,endişe,nötr,emotion_norm
+bunlar fokal hepatik lezyonlar değil — peliozis hepatis lezyonları. erratik kalp atışıyla birlikte anabolik steroid kötüye kullanımına işaret ediyor.,House,0,0,0,0,2.0,kararlı,nötr,emotion_norm
+bu bir tümör olabilir.,Foreman,0,0,0,0,1.0,şaşkın,nötr,emotion_norm
+deli olduğunu düşünüyor musun?,House,0,0,0,0,0.0,alaycı,alaycı,emotion_norm
+"güney afrika'dan gelen raporlara göre bir hap, bitkisel hayattaki birini canlandırabiliyormuş.",House,1,1,1,1,1.0,emredici,nötr,emotion_norm
+idrar boşaltma isteği dayanılmaz hale geldiğinde bize söylemeniz gerekiyor.,Foreman,1,0,0,1,0.0,şaşkın,nötr,emotion_norm
+"amber onu amfoterisine başlatıyor, bu onu iyileştirecek.",Brennan,0,0,1,0,1.0,kararlı,emin,emotion_norm
+böbrek kanallarındaki kalsiyum birikintileri cerrahi olarak temizlenmezse kalıcı böbrek hasarı oluşur.,Taub,1,0,0,1,2.0,analitik,ciddi,emotion_norm
+sırtı ve elleri çok ağrıyor.,Christina,1,0,0,0,3.0,acı,endişe,emotion_norm
+kalpte global hipokinezi gelişti.,Chase,1,0,0,0,1.0,düşünceli,ciddi,emotion_norm
+"ona kan nakli yapmak zorunda kaldık, 30 civarına döndü.",Foreman,0,0,0,1,1.0,kararlı,nötr,emotion_norm
+...karaciğerinin bir parçasını bağışlamak olursa?,Hasta,1,1,1,1,1.0,kaygı,panik,emotion_norm
+aşırı oksijenlenme hücre hasarına neden olabilir ve eğer akciğerlerdeki hücreler hasar görürse...,Cameron,1,0,0,0,2.0,empati,nötr,emotion_norm
+"beyindeki plaklar kötü bir sunucu gibidir, bilgi akışını yavaşlatır. parahipokampüste ise beyin sapına yayılır. beyin biyopsisi plakları gösterir.",House,1,1,0,1,4.0,analitik,nötr,emotion_norm
+lösemi olabilir. kemik iliği biyopsisine başladı.,Chase,1,1,0,0,0.0,nötr,nötr,emotion_norm
+"[{""text"":""koagülopati"",""type"":""symptom""},{""text"":""böbrek"",""type"":""anatomy""}]",House,0,0,0,0,0.0,alaycı,nötr,emotion_norm
+"kan yaymasında şistositler var, bunun anlamı pıhtılaşmanın nedeni dic; peki dic'e ne neden oluyor?",House,1,1,1,1,4.0,analitik,analitik,emotion_norm
+kendime zarar vermeyi bırakmak için vicodin'in uyuşturucu etkisine sığınıyorum.,House,1,0,1,0,2.0,sarcastic,not_sarcastic,sarcasm_label
+sonunda sesimi duyabiliyorlar. bir makine aracılığıyla olsa da konuşabiliyorum.,Lee,0,0,0,1,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+bu konjestif kalp yetmezliği değil.,House,0,0,0,0,2.0,not_sarcastic,not_sarcastic,sarcasm_label
+"beyninin kim olduğu, nerede olduğu veya ne olduğu hakkında hiçbir fikri yok. boşlukları etrafta ne bulursa onunla dolduruyor.",House,1,0,0,0,1.0,sarcastic,not_sarcastic,sarcasm_label
+...kötü şeyler yapacaksın demek adrenal bezlerine mr çekin.,Dr. Chase,1,1,1,1,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+ailenizde karaciğer hastalığı geçmişi var mı?,House,1,1,1,1,1.0,sarcastic,not_sarcastic,sarcasm_label
+"amiloidoz ile başlayın, zamyloidoza ulaşana kadar devam edin.",House,1,0,0,0,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+acil trakeotomi uygulandı.,Chase,1,0,0,1,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+protein tipi aa.,Chase,0,1,0,1,2.0,not_sarcastic,not_sarcastic,sarcasm_label
+"crohn olduğunu sanmıyorum, diğer belirtilerin hiçbiri yok.",Cameron,1,0,0,0,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+transözefagial eko için hazırlayacağım seni.,Kutner,1,1,1,1,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+"demek pıhtılaşma kanda başlamadı, akciğerlerde başladı. pulmoner emboli.",House,1,1,0,0,2.0,sarcastic,not_sarcastic,sarcasm_label
+kronik pulmoner emboli solunum sıkıntısını ve akciğerlerinden kan gelmesini açıklayabilir.,Taub,1,1,1,1,4.0,not_sarcastic,not_sarcastic,sarcasm_label
+adam iki yıldır yürüyemiyor ve kimse nedenini bilmiyor; asıl ilginç olan bu.,House,1,0,0,0,1.0,sarcastic,not_sarcastic,sarcasm_label
+lomber ponksiyon yapın.,House,0,0,0,1,2.0,not_sarcastic,not_sarcastic,sarcasm_label
+"hipoglisemi atakları ve senkoplarım, hatta geçirdiğim kardiyak arrest, pankreastaki bu tümörden kaynaklanıyormuş.",Sebastian,1,1,0,0,5.0,not_sarcastic,not_sarcastic,sarcasm_label
+ani şok ve düşük tansiyon için acil sıvı tedavisi gerekli.,Dr. Cuddy,1,1,1,1,0.0,not_sarcastic,not_sarcastic,sarcasm_label
+yansıyan ağrı. omuriliğindeki ağrı merkezleriyle iletişimi kestin.,House,1,0,0,0,0.0,sarcastic,not_sarcastic,sarcasm_label
+v-fib gibi görünüyor. şok cihazını getirin!,Lim,1,0,0,1,2.0,not_sarcastic,not_sarcastic,sarcasm_label
+"restriktif perikardit. ameliyata alın. zor bir prosedür, bütün gece sürecek.",House,0,1,0,1,2.0,sarcastic,not_sarcastic,sarcasm_label
+bir sorun var; bir hasta daha geldi.,Cameron,0,0,0,0,0.0,not_sarcastic,not_sarcastic,sarcasm_label
+hasta insanların başına kötü şeyler gelebiliyor.,Dr. Wilson,1,1,1,1,0.0,not_sarcastic,not_sarcastic,sarcasm_label
+ilaçları durdurursanız ölürüm. birkaç gün kazandırmak için bunu yaptınız ve şimdi geri mi alıyorsunuz?,Hannah,0,0,0,0,1.0,not_sarcastic,not_sarcastic,sarcasm_label
+"mor strialar ve ay yüz görünümü, fizik muayenede cushing lehine en güçlü ipuçlarından.",Cameron,1,1,0,0,4.0,not_sarcastic,not_sarcastic,sarcasm_label
+üst batın taramasında pankreasın baş kısmında büyük bir kitle görünüyor.,Taub,0,0,0,0,2.0,not_sarcastic,not_sarcastic,sarcasm_label
+son altı ayını son dönem kalp yetmezliği olan kocasının yanında geçirmiş.,House,1,0,0,0,1.0,ilk_değerlendirme,hipotez,diagnosis_stage_norm
+"gündüz vakti uyuyakalıyor ve uyurgezerlik yapıyor; bu bir teşhis değil, semptomdur.",Foreman,1,0,0,0,0.0,ilk_değerlendirme,değerlendirme,diagnosis_stage_norm
+sorun akciğerlerden de kaynaklanabilir; laboratuvarda soluduğu toksik kimyasallar etkili olmuş olabilir.,Foreman,0,0,0,0,2.0,hipotez,hipotez,diagnosis_stage_norm
+"kulaklarımda sürekli çınlama var ve duyamıyorum, audiometri testi istiyorum.",Hasta,1,1,1,1,0.0,tedavi sonrası,erken evre,diagnosis_stage_norm
+"fibromun çıkarılması tedavi. beyni, böbrekleri, her şeyi düzeltecek.",House,0,0,0,1,1.0,tedavi,kesin_tanı,diagnosis_stage_norm
+"""hastanın kemik iliğini ablate edin.""",House,1,1,1,1,1.0,araştırma,tedavi,diagnosis_stage_norm
+mast hücreli lösemi olabilir. anafilaksiye neden olabilir.,Cameron,0,0,0,0,2.0,hipotez,hipotez,diagnosis_stage_norm
+kanama laparoskopi sonrası başladı.,Taub,1,0,0,0,1.0,izlem,değerlendirme,diagnosis_stage_norm
+"whipple olsaydı, bir tür nörolojik tutulum olurdu.",House,1,0,0,0,2.0,ayırıcı_tanı,ayırıcı_tanı,diagnosis_stage_norm
+hapşırma yeni bir semptom. burun akıntısı enfeksiyon olabilir.,House,1,0,0,0,1.0,hipotez,ayırıcı_tanı,diagnosis_stage_norm
+insanlarda nadir görülür ama antibiyotikle kolayca tedavi edilebilir.,Taub,0,0,1,0,0.0,tedavi,tedavi,diagnosis_stage_norm
+bu senin mr'ın. lezyonlarda düzelme görünüyor.,Taub,1,1,0,0,0.0,test_süreci,değerlendirme,diagnosis_stage_norm
+"toksikoloji taraması normaldi. tüm testler normaldi. pıhtı yok, ödem yok ve hala nefes alamıyor.",House,1,1,0,0,4.0,kesin_tanı,değerlendirme,diagnosis_stage_norm
+dozu iki katına çıkarın. ve listeye tygacil ekleyin.,House,0,0,1,0,1.0,tedavi,tedavi,diagnosis_stage_norm
+"hızlı soluk alıyorsun, çeneni yukarı kaldır ve nefes borunu göster.",House,1,1,1,1,3.0,araştırma,değerlendirme,diagnosis_stage_norm
+kolum biraz ağrıyor.,Danny,1,0,0,0,2.0,değerlendirme,değerlendirme,diagnosis_stage_norm
+kanamayı durdurduk ama beyaz kan sayımı düşmeye devam ediyor.,Chase,1,0,0,0,2.0,değerlendirme,değerlendirme,diagnosis_stage_norm
+"olağan şüphelileri toplayın. amiloidoz, sarkoidoz, hemokromatoz. hatta coşun, bütün '-ozis'lere bakın.",House,0,0,0,0,3.0,kesin_tanı,test,diagnosis_stage_norm
+nöbetten önce mide bulantısı veya kusma oldu mu?,Foreman,1,0,0,0,3.0,itiraz,değerlendirme,diagnosis_stage_norm
+steroidlere başlıyoruz.,Masters,0,1,0,0,0.0,test,tedavi,diagnosis_stage_norm
+sigara. günde iki kez. çalışmalar sigara içmenin inflamatuar bağırsağı kontrol etmenin en etkili yollarından biri olduğunu gösterdi.,House,0,0,1,0,2.0,tedavi,kesin_tanı,diagnosis_stage_norm
+creutzfeldtjakob düşünüldü.,Chase,1,0,0,0,1.0,tanı,hipotez,diagnosis_stage_norm
+hasta kan kustu.,Taub,1,0,0,0,1.0,izlem,değerlendirme,diagnosis_stage_norm
+epilepsi ile açıklanamayan nöbet ve yükselmiş kalsiyum seviyeleri.,Cameron,1,0,0,0,2.0,semptom_tanıma,erken,diagnosis_stage_norm
+"susuzluk, bunaltı, saldırganlık ve sağ elde spastik kore belirtileri var.",Foreman,1,1,1,1,5.0,acil,değerlendirme,diagnosis_stage_norm
+çok kötü. ben başka bir nedenden dolayı umuyordum. gidip kameramı alacaktım. ct taraması yaptırın. bu sefer beyni.,House,0,1,0,0,2.0,bağışıklık sistemi,beyin,organ_norm
+"ofisini incelemek için izin isteyip, akabinde mr çekebiliriz.",Foreman,0,1,0,0,1.0,beyin,beyin,organ_norm
+"tedavi onun kanser olabileceğini kanıtlar, kanser olduğunu değil. kanser gibi yürüyen, kanser gibi konuşan ama kanser olmayan şeyi bulmalıyız.",House,1,0,0,0,2.0,genel,genel,organ_norm
+ilaçları tamamen kesmek yerine kontrollü azaltarak detoks yapmak daha güvenli olabilir.,Thirteen,1,0,0,0,1.0,bağışıklık,genel,organ_norm
+"solunum sesleri iki tarafta da duyuluyor, pnömotoraksı olduğunu sanmıyorum.",Cuddy,1,1,0,0,3.0,boyun,akciğer,organ_norm
+emin olmak için biyopsi yapmalıyız. hepsi tüm semptomları açıklayabilir.,Chase,0,1,0,0,2.0,omurilik,beyin,organ_norm
+bacaklarında felç mi var?,Foreman,1,0,0,0,2.0,kas,bacak,organ_norm
+"tedaviye yanıt aldık, hastanın hayati fonksiyonları stabilize oldu ve kistleri temizlendi.",Thirteen,1,0,0,0,1.0,bağışıklık,tüm vücut,organ_norm
+"röntgen tümör göstermedi, o akustik gölge sadece zararsız bir lipommuş.",Adams,1,1,0,0,3.0,göğüs,göğüs,organ_norm
+"beyaz erkek, 30'lu yaşlarda, bilinç kaybı ve anormal ekg.",Masters,1,1,0,0,0.0,kulak,kalp,organ_norm
+derisini bir yılan gibi döküyor.,Adams,1,0,0,0,2.0,deri,deri,organ_norm
+"otoimmün hastalık ana seviyesi ile tespit edilir, ana testinden önce de insanlar otoimmün hastalıklara yakalanıyordu.",House,1,1,1,1,2.0,damar,kan,organ_norm
+ani kalp ritim bozukluğum ve bayılma için acil yardım istiyorum.,Hasta,1,1,1,1,0.0,kalp,kalp,organ_norm
+"uzun süreli fmf, amiloidoz birikimine ve geri dönüşümsüz böbrek hasarına yol açar.",Taub,1,0,0,0,0.0,deri,böbrek,organ_norm
+agorafobi bir semptom mu yoksa yedi yıl önceki vurulma olayından kalan bir travma mı?,Kutner,1,0,0,0,0.0,genel,beyin,organ_norm
+"belki otc eksikliği vardır. vücut nitrojeni metabolize edemez, karaciğere zarar verir. hamburger testi yapın.",House,1,1,0,0,3.0,boyun,karaciğer,organ_norm
+gıda zehirlenmesi olabilirdi. ikiniz birlikte kahvaltı yaptınız mı?,Foreman,1,0,0,0,1.0,genel,mide,organ_norm
+"bağırsaklarınızdaki gaz birikmesi ameliyat sırasında alev alabilir, çok osurmamaya çalışın.",House,0,0,0,0,0.0,genel,mide,organ_norm
+metabolik sorun kontrol altına alınırsa yine de transplant gerekli olacak mı?,Wilson,0,0,0,1,2.0,karaciğer,karaciğer,organ_norm
+kız halüsinasyon görüyor.,Wilson,1,0,0,0,2.0,karaciğer,beyin,organ_norm
+yüksek... kan şekeri.,Taub,1,0,0,0,1.0,kan,kan,organ_norm
+ani kan zehirlenmesi için acil mide yıkama ve antidot gerekli.,Dr. Wilson,1,1,1,1,6.0,tüm vücut,tüm vücut,organ_norm
+ilk dozu ameliyathanede direk akciğerlerine verin. izoleli odada uv ışını verin.,House,1,0,1,1,4.0,burun,akciğer,organ_norm
+prozac'ın serotonin sendromunu tetiklemiş olabileceğini ve bu yüzden bromokriptin verilmesini öneriyor.,Cameron,1,0,1,0,4.0,mide,beyin,organ_norm
+akciğerde kanama var.,Doctor,1,1,1,1,2.0,damar,akciğer,organ_norm

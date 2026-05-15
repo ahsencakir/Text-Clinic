@@ -1,0 +1,3490 @@
+[
+  {
+    "task": "intent_norm",
+    "task_label": "Konusma amaci",
+    "rows": 6622,
+    "classes": [
+      "acil",
+      "açıklama",
+      "bilgi talebi",
+      "değerlendirme",
+      "durum bilgilendirmesi",
+      "durum değerlendirme",
+      "emir",
+      "gözlem",
+      "hipotez",
+      "hipotez önerme",
+      "itiraz",
+      "karar",
+      "prosedür açıklama",
+      "raporlama",
+      "reçete",
+      "sonuç",
+      "sorgulama",
+      "soru",
+      "soru sorma",
+      "talep",
+      "talimat",
+      "tanı",
+      "tanı koymak",
+      "tanısal",
+      "tedavi",
+      "tedavi önerisi",
+      "test",
+      "test talebi",
+      "teşhis",
+      "teşhis sorgusu",
+      "uyarı",
+      "öneri",
+      "şaka",
+      "şikayet bildirimi"
+    ],
+    "train_size": 5297,
+    "test_size": 1325,
+    "vocabulary_size": 4620,
+    "model_path": "D:\\visual studio\\nlp-project\\models\\intent_norm_lr_pipeline.joblib",
+    "metrics": {
+      "accuracy": 0.1811320754716981,
+      "recall": 0.1811320754716981,
+      "f1": 0.1677044021781568,
+      "per_class": {
+        "acil": {
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1": 0.3333333333333333,
+          "support": 4
+        },
+        "açıklama": {
+          "precision": 0.7692307692307693,
+          "recall": 0.05747126436781609,
+          "f1": 0.10695187165775401,
+          "support": 696
+        },
+        "bilgi talebi": {
+          "precision": 0.18181818181818182,
+          "recall": 0.25,
+          "f1": 0.21052631578947367,
+          "support": 8
+        },
+        "değerlendirme": {
+          "precision": 0.07692307692307693,
+          "recall": 0.3076923076923077,
+          "f1": 0.12307692307692308,
+          "support": 26
+        },
+        "durum bilgilendirmesi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "durum değerlendirme": {
+          "precision": 0.12345679012345678,
+          "recall": 1.0,
+          "f1": 0.21978021978021978,
+          "support": 10
+        },
+        "emir": {
+          "precision": 0.07142857142857142,
+          "recall": 0.1,
+          "f1": 0.08333333333333333,
+          "support": 10
+        },
+        "gözlem": {
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1": 0.2,
+          "support": 24
+        },
+        "hipotez": {
+          "precision": 0.3944954128440367,
+          "recall": 0.23626373626373626,
+          "f1": 0.29553264604810997,
+          "support": 182
+        },
+        "hipotez önerme": {
+          "precision": 0.26666666666666666,
+          "recall": 1.0,
+          "f1": 0.42105263157894735,
+          "support": 4
+        },
+        "itiraz": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "karar": {
+          "precision": 0.1111111111111111,
+          "recall": 0.3076923076923077,
+          "f1": 0.16326530612244897,
+          "support": 13
+        },
+        "prosedür açıklama": {
+          "precision": 0.14705882352941177,
+          "recall": 0.625,
+          "f1": 0.23809523809523808,
+          "support": 8
+        },
+        "raporlama": {
+          "precision": 0.24,
+          "recall": 0.6666666666666666,
+          "f1": 0.35294117647058826,
+          "support": 9
+        },
+        "reçete": {
+          "precision": 0.07692307692307693,
+          "recall": 0.3333333333333333,
+          "f1": 0.125,
+          "support": 6
+        },
+        "sonuç": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "sorgulama": {
+          "precision": 0.1,
+          "recall": 0.16666666666666666,
+          "f1": 0.125,
+          "support": 6
+        },
+        "soru": {
+          "precision": 0.2786885245901639,
+          "recall": 0.3541666666666667,
+          "f1": 0.3119266055045872,
+          "support": 48
+        },
+        "soru sorma": {
+          "precision": 0.045454545454545456,
+          "recall": 0.2,
+          "f1": 0.07407407407407407,
+          "support": 5
+        },
+        "talep": {
+          "precision": 0.1111111111111111,
+          "recall": 0.36363636363636365,
+          "f1": 0.1702127659574468,
+          "support": 11
+        },
+        "talimat": {
+          "precision": 0.2413793103448276,
+          "recall": 0.358974358974359,
+          "f1": 0.28865979381443296,
+          "support": 39
+        },
+        "tanı": {
+          "precision": 0.1301775147928994,
+          "recall": 0.5365853658536586,
+          "f1": 0.20952380952380953,
+          "support": 41
+        },
+        "tanı koymak": {
+          "precision": 0.3076923076923077,
+          "recall": 0.8,
+          "f1": 0.4444444444444444,
+          "support": 5
+        },
+        "tanısal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "tedavi": {
+          "precision": 0.23214285714285715,
+          "recall": 0.37142857142857144,
+          "f1": 0.2857142857142857,
+          "support": 35
+        },
+        "tedavi önerisi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "test": {
+          "precision": 0.06097560975609756,
+          "recall": 0.2777777777777778,
+          "f1": 0.1,
+          "support": 18
+        },
+        "test talebi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "teşhis": {
+          "precision": 0.3191489361702128,
+          "recall": 0.8333333333333334,
+          "f1": 0.46153846153846156,
+          "support": 18
+        },
+        "teşhis sorgusu": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "uyarı": {
+          "precision": 0.029411764705882353,
+          "recall": 0.09090909090909091,
+          "f1": 0.044444444444444446,
+          "support": 11
+        },
+        "öneri": {
+          "precision": 0.06666666666666667,
+          "recall": 0.05555555555555555,
+          "f1": 0.06060606060606061,
+          "support": 18
+        },
+        "şaka": {
+          "precision": 0.06666666666666667,
+          "recall": 0.35294117647058826,
+          "f1": 0.11214953271028037,
+          "support": 17
+        },
+        "şikayet bildirimi": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 10
+        }
+      }
+    },
+    "majority_baseline": {
+      "accuracy": 0.5252830188679245,
+      "recall": 0.5252830188679245,
+      "f1": 0.36179810107083177,
+      "per_class": {
+        "acil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "açıklama": {
+          "precision": 0.5252830188679245,
+          "recall": 1.0,
+          "f1": 0.6887679366650173,
+          "support": 696
+        },
+        "bilgi talebi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "değerlendirme": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 26
+        },
+        "durum bilgilendirmesi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "durum değerlendirme": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "emir": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "gözlem": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 24
+        },
+        "hipotez": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 182
+        },
+        "hipotez önerme": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "itiraz": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "karar": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "prosedür açıklama": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "raporlama": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        },
+        "reçete": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "sonuç": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "sorgulama": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "soru": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 48
+        },
+        "soru sorma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "talep": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "talimat": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 39
+        },
+        "tanı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 41
+        },
+        "tanı koymak": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "tanısal": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "tedavi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 35
+        },
+        "tedavi önerisi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "test": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 18
+        },
+        "test talebi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "teşhis": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 18
+        },
+        "teşhis sorgusu": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "uyarı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "öneri": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 18
+        },
+        "şaka": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 17
+        },
+        "şikayet bildirimi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        }
+      },
+      "majority_class": "açıklama"
+    },
+    "top_tokens": {
+      "acil": [
+        "speaker_Doctor",
+        "olmuş",
+        "speaker_Crandall",
+        "speaker_EMT",
+        "drug",
+        "glikoz",
+        "speaker_Joe",
+        "akciğerleri",
+        "sağlayabiliriz",
+        "alamıyor",
+        "speaker_Vince",
+        "iyice"
+      ],
+      "açıklama": [
+        "speaker_Masters",
+        "speaker_Dobson",
+        "kan",
+        "hiçbir",
+        "entity_count",
+        "hastada",
+        "çıktı",
+        "speaker_Danny",
+        "ağrısı",
+        "speaker_Nolan",
+        "yok",
+        "yanıt"
+      ],
+      "bilgi talebi": [
+        "speaker_Dr. Wilson",
+        "speaker_Dr. Chase",
+        "speaker_Dr. Foreman",
+        "speaker_Dr. Cameron",
+        "speaker_Dr. House",
+        "doktor",
+        "böbrek",
+        "bana",
+        "verebilirsin",
+        "neyi",
+        "geldiğini",
+        "bayılma"
+      ],
+      "değerlendirme": [
+        "yok",
+        "değil",
+        "belirtisi",
+        "normal",
+        "alerjik",
+        "arttı",
+        "baktınız",
+        "stabil",
+        "tansiyonu",
+        "belirgin",
+        "benziyor",
+        "kesinlikle"
+      ],
+      "durum bilgilendirmesi": [
+        "speaker_Dr. Cuddy",
+        "başka",
+        "speaker_Dr. Cameron",
+        "ağrısı",
+        "speaker_Dr. Chase",
+        "speaker_Dr. Wilson",
+        "eledik",
+        "üretiyor",
+        "doktorların",
+        "bizi",
+        "hakkında",
+        "görünürdü"
+      ],
+      "durum değerlendirme": [
+        "has_symptom",
+        "speaker_Alfredo",
+        "speaker_Wilson",
+        "kaybedebilir",
+        "kanama",
+        "elini",
+        "speaker_Cuddy",
+        "entity_count",
+        "elin",
+        "kötü",
+        "kaybediyor",
+        "doku"
+      ],
+      "emir": [
+        "yapın",
+        "başlatın",
+        "edin",
+        "ep",
+        "verin",
+        "testi",
+        "sedasyon",
+        "gidin",
+        "nükleer",
+        "ct",
+        "dejenerasyonu",
+        "tedavisine"
+      ],
+      "gözlem": [
+        "bak",
+        "var",
+        "speaker_Donny",
+        "bezi",
+        "kan",
+        "oradaki",
+        "ateş",
+        "speaker_Cate",
+        "kustu",
+        "speaker_Max",
+        "seviyeleri",
+        "iyi"
+      ],
+      "hipotez": [
+        "olabilir",
+        "speaker_Masters",
+        "speaker_Doctor",
+        "enfeksiyonu",
+        "speaker_Chase",
+        "uyuyor",
+        "yol",
+        "speaker_Cameron",
+        "açıklayabilir",
+        "speaker_Cole",
+        "ihtimali",
+        "açabilir"
+      ],
+      "hipotez önerme": [
+        "speaker_Park",
+        "speaker_Adams",
+        "brugada",
+        "lateks",
+        "speaker_Andrews",
+        "genetik",
+        "olabilir",
+        "semptomlarına",
+        "sendromu",
+        "alerjisi",
+        "garip",
+        "tiroid"
+      ],
+      "itiraz": [
+        "yok",
+        "zaten",
+        "speaker_Broda",
+        "değil",
+        "şimdiye",
+        "başlangıçlı",
+        "ani",
+        "speaker_Kelly",
+        "serolojiler",
+        "idrarında",
+        "hastaya",
+        "ancak"
+      ],
+      "karar": [
+        "verelim",
+        "ihtimali",
+        "planlandı",
+        "yapalım",
+        "tanı",
+        "üst",
+        "speaker_Nash",
+        "hasta",
+        "uygun",
+        "speaker_Frankie",
+        "speaker_House",
+        "thirteen"
+      ],
+      "prosedür açıklama": [
+        "has_procedure",
+        "speaker_Sebastian",
+        "entity_count",
+        "speaker_Andie",
+        "beynine",
+        "kemoterapi",
+        "speaker_Cameron",
+        "anjiyo",
+        "zedelemiş",
+        "pıhtıyı",
+        "bulmak",
+        "boynundaki"
+      ],
+      "raporlama": [
+        "speaker_Lucas",
+        "bölgeler",
+        "oksipital",
+        "çıktı",
+        "temporal",
+        "salmonella",
+        "speaker_George",
+        "speaker_Cameron",
+        "normal",
+        "dayanıyor",
+        "speaker_Gabe",
+        "başlattım"
+      ],
+      "reçete": [
+        "gösteriyor",
+        "has_drug",
+        "şeyler",
+        "şimdi",
+        "vücuda",
+        "karım",
+        "speaker_Foreman",
+        "hastalığı",
+        "oğlunuz",
+        "yayılmış",
+        "iliğini",
+        "ciddi"
+      ],
+      "sonuç": [
+        "speaker_Doctor",
+        "speaker_Surgeon",
+        "kalıcı",
+        "verilen",
+        "morfin",
+        "hasarı",
+        "düzeyi",
+        "idrarda",
+        "hayatını",
+        "gösterdi",
+        "analiz",
+        "etmeye"
+      ],
+      "sorgulama": [
+        "mı",
+        "öyküsü",
+        "speaker_Thirteen",
+        "cinsel",
+        "ailenizde",
+        "hak",
+        "geçmişi",
+        "has_drug",
+        "speaker_Tritter",
+        "laktat",
+        "yeniden",
+        "isteyin"
+      ],
+      "soru": [
+        "mı",
+        "peki",
+        "speaker_Roy",
+        "herhangi",
+        "servikal",
+        "nedir",
+        "zamandır",
+        "speaker_Patient",
+        "önce",
+        "cipa",
+        "oluyor",
+        "kanıyor"
+      ],
+      "soru sorma": [
+        "tür",
+        "anladım",
+        "speaker_Jeffrey",
+        "şikayet",
+        "var",
+        "speaker_Sarah",
+        "speaker_Woman",
+        "kokain",
+        "sebep",
+        "hematokriti",
+        "alerjisi",
+        "etti"
+      ],
+      "talep": [
+        "has_drug",
+        "speaker_Klinik Hastası",
+        "yapın",
+        "speaker_Hal",
+        "iki",
+        "speaker_Vince",
+        "otoimmün",
+        "sendromun",
+        "basın",
+        "kanseri",
+        "speaker_Roy",
+        "niasin"
+      ],
+      "talimat": [
+        "yapın",
+        "çekin",
+        "başlayın",
+        "hemen",
+        "edin",
+        "speaker_Thirteen",
+        "hastayı",
+        "speaker_Taub",
+        "speaker_House",
+        "bakın",
+        "dna",
+        "mri"
+      ],
+      "tanı": [
+        "speaker_Kutner",
+        "speaker_Taub",
+        "speaker_Thirteen",
+        "hava",
+        "ciddi",
+        "nörolojik",
+        "gelişti",
+        "tespit",
+        "saptandı",
+        "soğuk",
+        "edildi",
+        "has_symptom"
+      ],
+      "tanı koymak": [
+        "has_procedure",
+        "seviyesi",
+        "düşük",
+        "has_symptom",
+        "inh",
+        "speaker_Cameron",
+        "belirtileri",
+        "uyluk",
+        "alıyorum",
+        "mavimsi",
+        "asidoz",
+        "speaker_Chase"
+      ],
+      "tanısal": [
+        "bulutlu",
+        "beynin",
+        "bırakır",
+        "lezyona",
+        "niasin",
+        "arteriyel",
+        "kanı",
+        "açıklar",
+        "hızını",
+        "heparin",
+        "atış",
+        "yüksek"
+      ],
+      "tedavi": [
+        "tedavi",
+        "başlandı",
+        "tedavisi",
+        "speaker_Doctor",
+        "speaker_Nolan",
+        "kesmek",
+        "verildi",
+        "tedaviye",
+        "intravenöz",
+        "has_drug",
+        "vermeye",
+        "başlayın"
+      ],
+      "tedavi önerisi": [
+        "kolundaki",
+        "ilaç",
+        "speaker_Dr. House",
+        "anevrizma",
+        "speaker_Dr. Foreman",
+        "hastalığını",
+        "speaker_Dr. Wilson",
+        "tanı",
+        "speaker_Dr. Chase",
+        "bilmiyoruz",
+        "getirdi",
+        "geniş"
+      ],
+      "test": [
+        "speaker_Doctor",
+        "testi",
+        "bt",
+        "has_test",
+        "mr",
+        "ultrason",
+        "karaciğerine",
+        "speaker_Cudy",
+        "antikor",
+        "önce",
+        "yapıldı",
+        "yapın"
+      ],
+      "test talebi": [
+        "speaker_Dr. Chase",
+        "masajı",
+        "speaker_Dr. Foreman",
+        "felci",
+        "kaymış",
+        "speaker_Dr. Cuddy",
+        "sırt",
+        "speaker_Dr. House",
+        "speaker_Dr. Cameron",
+        "kafa",
+        "olduğunda",
+        "yerleştireceğiz"
+      ],
+      "teşhis": [
+        "speaker_Doctor",
+        "hastalığı",
+        "olabilir",
+        "toksoplazmoz",
+        "durum",
+        "speaker_Wilson",
+        "speaker_Kutner",
+        "nikotin",
+        "wilson",
+        "oluyor",
+        "eksikliği",
+        "has_drug"
+      ],
+      "teşhis sorgusu": [
+        "speaker_Dr. House",
+        "speaker_Dr. Foreman",
+        "eklediğinde",
+        "test",
+        "speaker_Dr. Chase",
+        "speaker_Dr. Wilson",
+        "amaçlı",
+        "kötü",
+        "olun",
+        "enfeksiyona",
+        "alkol",
+        "yapılan"
+      ],
+      "uyarı": [
+        "speaker_Kutner",
+        "steroid",
+        "eğer",
+        "tekrarladı",
+        "speaker_Wilson",
+        "beyin",
+        "anne",
+        "sistemini",
+        "geçirmesine",
+        "diyaframa",
+        "ilerliyor",
+        "speaker_Cuddy"
+      ],
+      "öneri": [
+        "speaker_Kelly",
+        "yapılmalı",
+        "endokardit",
+        "olacak",
+        "lenfoma",
+        "speaker_Taub",
+        "kateter",
+        "apse",
+        "fabry",
+        "lösemi",
+        "etkilidir",
+        "kanser"
+      ],
+      "şaka": [
+        "speaker_House",
+        "vardır",
+        "harika",
+        "herkes",
+        "döküntü",
+        "ağrı",
+        "burada",
+        "bize",
+        "hastalıkları",
+        "kendi",
+        "dikişleri",
+        "kontrol"
+      ],
+      "şikayet bildirimi": [
+        "speaker_Hasta",
+        "öksürük",
+        "rahat",
+        "tıkanma",
+        "speaker_Dr. Chase",
+        "etkiler",
+        "değerini",
+        "cihazına",
+        "sorununu",
+        "embolizasyon",
+        "çağrı",
+        "speaker_Dr. House"
+      ]
+    }
+  },
+  {
+    "task": "emotion_norm",
+    "task_label": "Duygu",
+    "rows": 6687,
+    "classes": [
+      "acil",
+      "acı",
+      "alaycı",
+      "analitik",
+      "ciddi",
+      "düşünceli",
+      "emin",
+      "empati",
+      "emredici",
+      "endişe",
+      "kararlı",
+      "kaygı",
+      "kaygılı",
+      "korku",
+      "meraklı",
+      "nötr",
+      "odaklanmış",
+      "otoriter",
+      "panik",
+      "sakin",
+      "umut",
+      "umutlu",
+      "yorgunluk",
+      "öfke",
+      "üzgün",
+      "üzüntü",
+      "şaşkın",
+      "şaşkınlık"
+    ],
+    "train_size": 5349,
+    "test_size": 1338,
+    "vocabulary_size": 4671,
+    "model_path": "D:\\visual studio\\nlp-project\\models\\emotion_norm_lr_pipeline.joblib",
+    "metrics": {
+      "accuracy": 0.2055306427503737,
+      "recall": 0.2055306427503737,
+      "f1": 0.22568863218603527,
+      "per_class": {
+        "acil": {
+          "precision": 0.09090909090909091,
+          "recall": 0.26666666666666666,
+          "f1": 0.13559322033898305,
+          "support": 15
+        },
+        "acı": {
+          "precision": 0.2727272727272727,
+          "recall": 0.8571428571428571,
+          "f1": 0.41379310344827586,
+          "support": 7
+        },
+        "alaycı": {
+          "precision": 0.1493212669683258,
+          "recall": 0.6,
+          "f1": 0.2391304347826087,
+          "support": 55
+        },
+        "analitik": {
+          "precision": 0.12,
+          "recall": 0.2,
+          "f1": 0.15,
+          "support": 45
+        },
+        "ciddi": {
+          "precision": 0.5777777777777777,
+          "recall": 0.18309859154929578,
+          "f1": 0.27807486631016043,
+          "support": 142
+        },
+        "düşünceli": {
+          "precision": 0.09090909090909091,
+          "recall": 0.5384615384615384,
+          "f1": 0.15555555555555556,
+          "support": 13
+        },
+        "emin": {
+          "precision": 0.10810810810810811,
+          "recall": 0.2222222222222222,
+          "f1": 0.14545454545454545,
+          "support": 18
+        },
+        "empati": {
+          "precision": 0.075,
+          "recall": 0.5454545454545454,
+          "f1": 0.13186813186813187,
+          "support": 11
+        },
+        "emredici": {
+          "precision": 0.09375,
+          "recall": 0.6,
+          "f1": 0.16216216216216217,
+          "support": 5
+        },
+        "endişe": {
+          "precision": 0.1958762886597938,
+          "recall": 0.296875,
+          "f1": 0.2360248447204969,
+          "support": 64
+        },
+        "kararlı": {
+          "precision": 0.09401709401709402,
+          "recall": 0.36666666666666664,
+          "f1": 0.14965986394557823,
+          "support": 30
+        },
+        "kaygı": {
+          "precision": 0.25,
+          "recall": 0.2727272727272727,
+          "f1": 0.2608695652173913,
+          "support": 11
+        },
+        "kaygılı": {
+          "precision": 0.05555555555555555,
+          "recall": 0.25,
+          "f1": 0.09090909090909091,
+          "support": 4
+        },
+        "korku": {
+          "precision": 0.06666666666666667,
+          "recall": 0.1875,
+          "f1": 0.09836065573770492,
+          "support": 16
+        },
+        "meraklı": {
+          "precision": 0.09523809523809523,
+          "recall": 0.3333333333333333,
+          "f1": 0.14814814814814814,
+          "support": 6
+        },
+        "nötr": {
+          "precision": 0.8050847457627118,
+          "recall": 0.1243455497382199,
+          "f1": 0.21541950113378686,
+          "support": 764
+        },
+        "odaklanmış": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "otoriter": {
+          "precision": 0.13333333333333333,
+          "recall": 0.2857142857142857,
+          "f1": 0.18181818181818182,
+          "support": 14
+        },
+        "panik": {
+          "precision": 0.8928571428571429,
+          "recall": 0.5555555555555556,
+          "f1": 0.684931506849315,
+          "support": 45
+        },
+        "sakin": {
+          "precision": 0.08333333333333333,
+          "recall": 0.125,
+          "f1": 0.1,
+          "support": 8
+        },
+        "umut": {
+          "precision": 0.09523809523809523,
+          "recall": 0.25,
+          "f1": 0.13793103448275862,
+          "support": 8
+        },
+        "umutlu": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "yorgunluk": {
+          "precision": 0.16666666666666666,
+          "recall": 0.4,
+          "f1": 0.23529411764705882,
+          "support": 5
+        },
+        "öfke": {
+          "precision": 0.05555555555555555,
+          "recall": 0.09090909090909091,
+          "f1": 0.06896551724137931,
+          "support": 11
+        },
+        "üzgün": {
+          "precision": 0.10714285714285714,
+          "recall": 0.3333333333333333,
+          "f1": 0.16216216216216217,
+          "support": 9
+        },
+        "üzüntü": {
+          "precision": 0.058823529411764705,
+          "recall": 0.16666666666666666,
+          "f1": 0.08695652173913043,
+          "support": 6
+        },
+        "şaşkın": {
+          "precision": 0.028985507246376812,
+          "recall": 0.2,
+          "f1": 0.05063291139240506,
+          "support": 10
+        },
+        "şaşkınlık": {
+          "precision": 0.10526315789473684,
+          "recall": 0.25,
+          "f1": 0.14814814814814814,
+          "support": 8
+        }
+      }
+    },
+    "majority_baseline": {
+      "accuracy": 0.5710014947683109,
+      "recall": 0.5710014947683109,
+      "f1": 0.41507625309513757,
+      "per_class": {
+        "acil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 15
+        },
+        "acı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "alaycı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 55
+        },
+        "analitik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 45
+        },
+        "ciddi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 142
+        },
+        "düşünceli": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "emin": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 18
+        },
+        "empati": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "emredici": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "endişe": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 64
+        },
+        "kararlı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 30
+        },
+        "kaygı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "kaygılı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "korku": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 16
+        },
+        "meraklı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "nötr": {
+          "precision": 0.5710014947683109,
+          "recall": 1.0,
+          "f1": 0.7269267364414843,
+          "support": 764
+        },
+        "odaklanmış": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "otoriter": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "panik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 45
+        },
+        "sakin": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "umut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "umutlu": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "yorgunluk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "öfke": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "üzgün": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        },
+        "üzüntü": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "şaşkın": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "şaşkınlık": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        }
+      },
+      "majority_class": "nötr"
+    },
+    "top_tokens": {
+      "acil": [
+        "fib",
+        "kusuyor",
+        "trakeotomi",
+        "speaker_EMT",
+        "iflas",
+        "kanama",
+        "verin",
+        "gastrointestinal",
+        "olmuş",
+        "speaker_Cheng",
+        "yeniden",
+        "nefes"
+      ],
+      "acı": [
+        "ağrıyor",
+        "idrar",
+        "speaker_Jeremy",
+        "başım",
+        "speaker_Frankie",
+        "uyuşturmak",
+        "speaker_Nate",
+        "speaker_Hal",
+        "midem",
+        "speaker_Nicole",
+        "speaker_Stewart",
+        "aniden"
+      ],
+      "alaycı": [
+        "speaker_House",
+        "nöbetler",
+        "bazen",
+        "harika",
+        "sadece",
+        "vardır",
+        "vicodin",
+        "bağlı",
+        "hiçbir",
+        "söylüyor",
+        "ağrısı",
+        "speaker_Alvie"
+      ],
+      "analitik": [
+        "speaker_Adams",
+        "speaker_Taub",
+        "açıklar",
+        "speaker_House",
+        "açıklayabilir",
+        "burada",
+        "travma",
+        "primer",
+        "geçici",
+        "uyuyor",
+        "speaker_Thirteen",
+        "olmaz"
+      ],
+      "ciddi": [
+        "speaker_Doctor",
+        "speaker_Nolan",
+        "speaker_Sebastian",
+        "speaker_Adams",
+        "speaker_Andie",
+        "speaker_Cindy",
+        "speaker_Park",
+        "tedaviye",
+        "hasta",
+        "görünmüyor",
+        "ağrı",
+        "speaker_Alfredo"
+      ],
+      "düşünceli": [
+        "olabilir",
+        "speaker_Kelly",
+        "endokardit",
+        "artı",
+        "aralıklı",
+        "safra",
+        "trombositleri",
+        "zehirlenmesi",
+        "böbrekler",
+        "peki",
+        "çoklu",
+        "kanser"
+      ],
+      "emin": [
+        "değil",
+        "yok",
+        "speaker_Amber",
+        "başlatacağız",
+        "speaker_Cole",
+        "yetmezliğine",
+        "speaker_Dobson",
+        "parçaları",
+        "beyninde",
+        "speaker_Taub",
+        "000",
+        "anlama"
+      ],
+      "empati": [
+        "zamandır",
+        "speaker_Cameron",
+        "victoria",
+        "son",
+        "metabolik",
+        "speaker_Molly",
+        "menenjit",
+        "ister",
+        "speaker_Victoria",
+        "kötü",
+        "yeniden",
+        "speaker_Kurtz"
+      ],
+      "emredici": [
+        "speaker_House",
+        "yapın",
+        "hasarını",
+        "alınması",
+        "bulmak",
+        "hipofiz",
+        "başlamak",
+        "ameliyathaneye",
+        "ihtiyacım",
+        "çekin",
+        "sıtma",
+        "örneği"
+      ],
+      "endişe": [
+        "speaker_Roy",
+        "speaker_Vince",
+        "kanıyor",
+        "antikonvülzan",
+        "speaker_Cuddy",
+        "tansiyonu",
+        "kanama",
+        "fazla",
+        "nöbet",
+        "testleri",
+        "speaker_Arlene",
+        "kalbim"
+      ],
+      "kararlı": [
+        "speaker_House",
+        "speaker_Terzi",
+        "sıvı",
+        "komşunun",
+        "gerekiyor",
+        "speaker_Cate",
+        "edin",
+        "ona",
+        "leptospiroz",
+        "yapmalıyız",
+        "lenfoma",
+        "lazım"
+      ],
+      "kaygı": [
+        "speaker_Rebecca",
+        "speaker_Nadia",
+        "edemiyorum",
+        "basıncı",
+        "speaker_Hasta",
+        "sspe",
+        "ay",
+        "speaker_Dr. House",
+        "yüksek",
+        "ölebilir",
+        "speaker_Dan'ın Babası",
+        "speaker_Dr. Chase"
+      ],
+      "kaygılı": [
+        "speaker_Danny",
+        "speaker_John Henry",
+        "speaker_Anne",
+        "durumda",
+        "size",
+        "yüzünden",
+        "pnömoni",
+        "gitmiş",
+        "artırabilir",
+        "toksisiteyi",
+        "speaker_Masters",
+        "sisteminden"
+      ],
+      "korku": [
+        "speaker_Morgan",
+        "kalbi",
+        "kardiyak",
+        "speaker_Marika",
+        "speaker_Fran",
+        "speaker_Ian",
+        "sıvıyla",
+        "speaker_Addie",
+        "speaker_John",
+        "speaker_Lupe",
+        "speaker_Lexa",
+        "algısı"
+      ],
+      "meraklı": [
+        "sendromu",
+        "peki",
+        "akciğerler",
+        "sisteme",
+        "olabilir",
+        "virüsü",
+        "herhangi",
+        "gerginlik",
+        "kollarında",
+        "ellerini",
+        "speaker_Terzi",
+        "hemoliz"
+      ],
+      "nötr": [
+        "speaker_Cameron",
+        "speaker_House",
+        "olabilir",
+        "speaker_Thirteen",
+        "hastada",
+        "speaker_Doctor",
+        "speaker_Kutner",
+        "speaker_Wilson",
+        "speaker_Foreman",
+        "speaker_Taub",
+        "normal",
+        "bt"
+      ],
+      "odaklanmış": [
+        "perikardit",
+        "speaker_Brennan",
+        "speaker_Cate",
+        "başlar",
+        "sol",
+        "karaciğer",
+        "bekleyin",
+        "olduğu",
+        "lobda",
+        "dalaktan",
+        "karaciğerde",
+        "alan"
+      ],
+      "otoriter": [
+        "speaker_Broda",
+        "hiperakut",
+        "verin",
+        "arayın",
+        "çekin",
+        "tutulumu",
+        "ret",
+        "gidip",
+        "etki",
+        "speaker_House",
+        "speaker_Malkin",
+        "lenf"
+      ],
+      "panik": [
+        "ani",
+        "acil",
+        "gerekli",
+        "müdahale",
+        "kalp",
+        "getirin",
+        "yardım",
+        "hızı",
+        "geçiriyor",
+        "speaker_Dan",
+        "sanırım",
+        "speaker_Dr. Foreman"
+      ],
+      "sakin": [
+        "speaker_Frontman",
+        "hemokromatozis",
+        "vermeliyiz",
+        "düşünüyorsunuz",
+        "karaciğer",
+        "böbrek",
+        "olduğunu",
+        "arsenik",
+        "albümin",
+        "chase",
+        "steroid",
+        "speaker_Park"
+      ],
+      "umut": [
+        "speaker_Lee",
+        "hareket",
+        "kolundaki",
+        "speaker_Dr. Chase",
+        "düşmeye",
+        "alkol",
+        "öksürük",
+        "kansere",
+        "speaker_Dr. Cuddy",
+        "house",
+        "speaker_Dr. House",
+        "felci"
+      ],
+      "umutlu": [
+        "başlayın",
+        "speaker_Klinik Hastası",
+        "bulduk",
+        "speaker_Richard",
+        "düzeldi",
+        "antibiyotikler",
+        "alanlar",
+        "gerekir",
+        "iyi",
+        "ultrasonda",
+        "başlaması",
+        "bulursak"
+      ],
+      "yorgunluk": [
+        "doktorların",
+        "speaker_Dr. Wilson",
+        "sağ",
+        "speaker_Dr. House",
+        "baş",
+        "hastanın",
+        "yapmalıyız",
+        "speaker_Dr. Cuddy",
+        "hastalar",
+        "speaker_Dr. Chase",
+        "uyku",
+        "speaker_Dr. Foreman"
+      ],
+      "öfke": [
+        "onun",
+        "speaker_Dr. Foreman",
+        "rektum",
+        "speaker_Dr. Wilson",
+        "sen",
+        "hemen",
+        "speaker_John",
+        "olmadığı",
+        "tutulumunu",
+        "hastayı",
+        "interferon",
+        "sağlamaya"
+      ],
+      "üzgün": [
+        "speaker_Bert",
+        "hafızasını",
+        "tipi",
+        "bilmiyorum",
+        "speaker_Gabe",
+        "yağ",
+        "kanserim",
+        "speaker_Barbara",
+        "yapmış",
+        "karım",
+        "edilemez",
+        "embolisini"
+      ],
+      "üzüntü": [
+        "std",
+        "has_symptom",
+        "hamile",
+        "akyuvar",
+        "oğlunuz",
+        "hastası",
+        "ödeme",
+        "mss",
+        "kaptı",
+        "sepsis",
+        "şoklara",
+        "kavernöz"
+      ],
+      "şaşkın": [
+        "tümör",
+        "bize",
+        "sıvı",
+        "kitle",
+        "metal",
+        "speaker_Emma",
+        "saçma",
+        "nerede",
+        "mavi",
+        "speaker_Kutner",
+        "olmuşsun",
+        "speaker_Dugan"
+      ],
+      "şaşkınlık": [
+        "timus",
+        "ilaç",
+        "bezi",
+        "sıvı",
+        "başında",
+        "semptomdur",
+        "vakti",
+        "kontrol",
+        "haplarını",
+        "speaker_Priest",
+        "hasarına",
+        "darlığı"
+      ]
+    }
+  },
+  {
+    "task": "sarcasm_label",
+    "task_label": "Sarkazm",
+    "rows": 7278,
+    "classes": [
+      "not_sarcastic",
+      "sarcastic"
+    ],
+    "train_size": 5822,
+    "test_size": 1456,
+    "vocabulary_size": 4970,
+    "model_path": "D:\\visual studio\\nlp-project\\models\\sarcasm_label_lr_pipeline.joblib",
+    "metrics": {
+      "accuracy": 0.8537087912087912,
+      "recall": 0.8537087912087912,
+      "f1": 0.8857854148171118,
+      "per_class": {
+        "not_sarcastic": {
+          "precision": 0.9793729372937293,
+          "recall": 0.8632727272727273,
+          "f1": 0.9176652493235408,
+          "support": 1375
+        },
+        "sarcastic": {
+          "precision": 0.22950819672131148,
+          "recall": 0.691358024691358,
+          "f1": 0.3446153846153846,
+          "support": 81
+        }
+      }
+    },
+    "majority_baseline": {
+      "accuracy": 0.9443681318681318,
+      "recall": 0.9443681318681318,
+      "f1": 0.9173480616875177,
+      "per_class": {
+        "not_sarcastic": {
+          "precision": 0.9443681318681318,
+          "recall": 1.0,
+          "f1": 0.971388202048746,
+          "support": 1375
+        },
+        "sarcastic": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 81
+        }
+      },
+      "majority_class": "not_sarcastic"
+    },
+    "top_tokens": {
+      "sarcastic": [
+        "speaker_House",
+        "speaker_Dr. House",
+        "büyüleyici",
+        "kaç",
+        "al",
+        "çekip",
+        "ayak",
+        "çiçekler",
+        "aids",
+        "olmayan",
+        "nöbetler",
+        "speaker_Sam"
+      ],
+      "not_sarcastic": [
+        "mr",
+        "tedavi",
+        "başlayın",
+        "ona",
+        "hastada",
+        "speaker_Cameron",
+        "nörolojik",
+        "taraması",
+        "lenf",
+        "bozukluğu",
+        "enfeksiyonu",
+        "fark"
+      ]
+    }
+  },
+  {
+    "task": "diagnosis_stage_norm",
+    "task_label": "Tani asamasi",
+    "rows": 6387,
+    "classes": [
+      "acil",
+      "araştırma",
+      "ayırıcı_tanı",
+      "başlangıç",
+      "değerlendirme",
+      "erken",
+      "erken evre",
+      "erken tanı",
+      "hipotez",
+      "ileri evre",
+      "ilk muayene",
+      "ilk_değerlendirme",
+      "itiraz",
+      "izlem",
+      "kesin_tanı",
+      "kritik",
+      "kronik",
+      "orta evre",
+      "semptom_tanıma",
+      "tanı",
+      "tanı araması",
+      "tanı koymak",
+      "tedavi",
+      "tedavi sonrası",
+      "tedavi_planı",
+      "test",
+      "test / tetkik",
+      "test_sonucu",
+      "test_süreci"
+    ],
+    "train_size": 5109,
+    "test_size": 1278,
+    "vocabulary_size": 4473,
+    "model_path": "D:\\visual studio\\nlp-project\\models\\diagnosis_stage_norm_lr_pipeline.joblib",
+    "metrics": {
+      "accuracy": 0.3051643192488263,
+      "recall": 0.3051643192488263,
+      "f1": 0.32047356116874665,
+      "per_class": {
+        "acil": {
+          "precision": 0.07142857142857142,
+          "recall": 0.3,
+          "f1": 0.11538461538461539,
+          "support": 10
+        },
+        "araştırma": {
+          "precision": 0.1,
+          "recall": 0.75,
+          "f1": 0.17647058823529413,
+          "support": 12
+        },
+        "ayırıcı_tanı": {
+          "precision": 0.208955223880597,
+          "recall": 0.24561403508771928,
+          "f1": 0.22580645161290322,
+          "support": 57
+        },
+        "başlangıç": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "değerlendirme": {
+          "precision": 0.4875,
+          "recall": 0.10893854748603352,
+          "f1": 0.1780821917808219,
+          "support": 358
+        },
+        "erken": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "erken evre": {
+          "precision": 0.8333333333333334,
+          "recall": 0.625,
+          "f1": 0.7142857142857143,
+          "support": 8
+        },
+        "erken tanı": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5,
+          "f1": 0.4,
+          "support": 6
+        },
+        "hipotez": {
+          "precision": 0.5568862275449101,
+          "recall": 0.3661417322834646,
+          "f1": 0.4418052256532066,
+          "support": 254
+        },
+        "ileri evre": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "ilk muayene": {
+          "precision": 0.2,
+          "recall": 0.14285714285714285,
+          "f1": 0.16666666666666666,
+          "support": 7
+        },
+        "ilk_değerlendirme": {
+          "precision": 0.12307692307692308,
+          "recall": 0.8888888888888888,
+          "f1": 0.21621621621621623,
+          "support": 9
+        },
+        "itiraz": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "izlem": {
+          "precision": 0.10344827586206896,
+          "recall": 0.6,
+          "f1": 0.17647058823529413,
+          "support": 5
+        },
+        "kesin_tanı": {
+          "precision": 0.1743119266055046,
+          "recall": 0.3064516129032258,
+          "f1": 0.2222222222222222,
+          "support": 62
+        },
+        "kritik": {
+          "precision": 0.92,
+          "recall": 0.9583333333333334,
+          "f1": 0.9387755102040817,
+          "support": 24
+        },
+        "kronik": {
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "f1": 0.8,
+          "support": 4
+        },
+        "orta evre": {
+          "precision": 0.375,
+          "recall": 0.375,
+          "f1": 0.375,
+          "support": 8
+        },
+        "semptom_tanıma": {
+          "precision": 0.03125,
+          "recall": 0.16666666666666666,
+          "f1": 0.05263157894736842,
+          "support": 6
+        },
+        "tanı": {
+          "precision": 0.3103448275862069,
+          "recall": 0.2465753424657534,
+          "f1": 0.2748091603053435,
+          "support": 73
+        },
+        "tanı araması": {
+          "precision": 0.2222222222222222,
+          "recall": 0.25,
+          "f1": 0.23529411764705882,
+          "support": 8
+        },
+        "tanı koymak": {
+          "precision": 0.25,
+          "recall": 0.7142857142857143,
+          "f1": 0.37037037037037035,
+          "support": 7
+        },
+        "tedavi": {
+          "precision": 0.4222222222222222,
+          "recall": 0.475,
+          "f1": 0.4470588235294118,
+          "support": 120
+        },
+        "tedavi sonrası": {
+          "precision": 0.125,
+          "recall": 0.16666666666666666,
+          "f1": 0.14285714285714285,
+          "support": 6
+        },
+        "tedavi_planı": {
+          "precision": 0.15625,
+          "recall": 0.5,
+          "f1": 0.23809523809523808,
+          "support": 10
+        },
+        "test": {
+          "precision": 0.4857142857142857,
+          "recall": 0.35789473684210527,
+          "f1": 0.4121212121212121,
+          "support": 190
+        },
+        "test / tetkik": {
+          "precision": 0.3,
+          "recall": 0.6,
+          "f1": 0.4,
+          "support": 5
+        },
+        "test_sonucu": {
+          "precision": 0.038461538461538464,
+          "recall": 0.2,
+          "f1": 0.06451612903225806,
+          "support": 5
+        },
+        "test_süreci": {
+          "precision": 0.06666666666666667,
+          "recall": 0.5,
+          "f1": 0.11764705882352941,
+          "support": 4
+        }
+      }
+    },
+    "majority_baseline": {
+      "accuracy": 0.28012519561815336,
+      "recall": 0.28012519561815336,
+      "f1": 0.1225975795003654,
+      "per_class": {
+        "acil": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "araştırma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 12
+        },
+        "ayırıcı_tanı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 57
+        },
+        "başlangıç": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "değerlendirme": {
+          "precision": 0.28012519561815336,
+          "recall": 1.0,
+          "f1": 0.43765281173594134,
+          "support": 358
+        },
+        "erken": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "erken evre": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "erken tanı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "hipotez": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 254
+        },
+        "ileri evre": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "ilk muayene": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "ilk_değerlendirme": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        },
+        "itiraz": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "izlem": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "kesin_tanı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 62
+        },
+        "kritik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 24
+        },
+        "kronik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "orta evre": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "semptom_tanıma": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "tanı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 73
+        },
+        "tanı araması": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "tanı koymak": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "tedavi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 120
+        },
+        "tedavi sonrası": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "tedavi_planı": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        },
+        "test": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 190
+        },
+        "test / tetkik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "test_sonucu": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "test_süreci": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        }
+      },
+      "majority_class": "değerlendirme"
+    },
+    "top_tokens": {
+      "acil": [
+        "speaker_Chase",
+        "desteği",
+        "speaker_Cameron",
+        "speaker_Lexa",
+        "resüsitasyon",
+        "uygulandı",
+        "speaker_Foreman",
+        "getirin",
+        "başlandı",
+        "speaker_Masters",
+        "miligram",
+        "süreli"
+      ],
+      "araştırma": [
+        "has_drug",
+        "speaker_Tritter",
+        "speaker_Wilson",
+        "speaker_House",
+        "has_procedure",
+        "has_test",
+        "speaker_Foreman",
+        "speaker_Cameron",
+        "senin",
+        "lp",
+        "hala",
+        "bağımlı"
+      ],
+      "ayırıcı_tanı": [
+        "olabilir",
+        "speaker_Park",
+        "speaker_Adams",
+        "sendromu",
+        "speaker_Kelly",
+        "hastalığı",
+        "speaker_Thirteen",
+        "şüphesi",
+        "speaker_Frontman",
+        "brugada",
+        "enfeksiyon",
+        "sebep"
+      ],
+      "başlangıç": [
+        "speaker_Donny",
+        "iki",
+        "has_drug",
+        "adam",
+        "başında",
+        "has_procedure",
+        "hiçbir",
+        "speaker_Priest",
+        "normaldi",
+        "kusuyor",
+        "has_test",
+        "muayene"
+      ],
+      "değerlendirme": [
+        "hastada",
+        "speaker_Doctor",
+        "hastanın",
+        "speaker_Cate",
+        "var",
+        "speaker_Cameron",
+        "speaker_Amber",
+        "vardı",
+        "speaker_Wilson",
+        "döküntü",
+        "önce",
+        "değil"
+      ],
+      "erken": [
+        "speaker_Joe",
+        "hesaba",
+        "hızını",
+        "atış",
+        "speaker_Crandall",
+        "speaker_Brent",
+        "toksikoloji",
+        "biyopsisini",
+        "ayırıcı",
+        "yaptın",
+        "arteriyel",
+        "kör"
+      ],
+      "erken evre": [
+        "baş",
+        "ani",
+        "dönmen",
+        "denge",
+        "speaker_Dr. House",
+        "gerekli",
+        "yapacağız",
+        "tahlil",
+        "testleri",
+        "titremen",
+        "enfeksiyonun",
+        "testi"
+      ],
+      "erken tanı": [
+        "speaker_Dr. Chase",
+        "kansere",
+        "akciğerlerine",
+        "speaker_Dr. Wilson",
+        "etti",
+        "speaker_Dr. Cuddy",
+        "chase",
+        "speaker_Dr. Cameron",
+        "yaktığı",
+        "house",
+        "birinin",
+        "etmesi"
+      ],
+      "hipotez": [
+        "olabilir",
+        "olmalı",
+        "speaker_Cole",
+        "speaker_Masters",
+        "bozukluğu",
+        "speaker_Amber",
+        "speaker_Doktor (OB)",
+        "speaker_House",
+        "tümörü",
+        "nöbetler",
+        "otoimmün",
+        "paraneoplastik"
+      ],
+      "ileri evre": [
+        "hasarına",
+        "speaker_Dr. Chase",
+        "ayrıca",
+        "imkansız",
+        "yapılan",
+        "speaker_Dr. House",
+        "etkiler",
+        "felci",
+        "alıyor",
+        "speaker_Dr. Cuddy",
+        "kanserin",
+        "beta"
+      ],
+      "ilk muayene": [
+        "kötü",
+        "speaker_Hasta",
+        "speaker_Dr. Cameron",
+        "açık",
+        "speaker_Dr. Chase",
+        "darlığı",
+        "alınabilir",
+        "almaz",
+        "tedaviyle",
+        "kolay",
+        "üst",
+        "speaker_Dr. Wilson"
+      ],
+      "ilk_değerlendirme": [
+        "has_symptom",
+        "speaker_Thirteen",
+        "hapları",
+        "speaker_Apple",
+        "hepatit",
+        "diyet",
+        "şeyi",
+        "insanlar",
+        "grip",
+        "kanser",
+        "yere",
+        "anlamına"
+      ],
+      "itiraz": [
+        "testi",
+        "nerede",
+        "speaker_Della",
+        "eledi",
+        "iliğini",
+        "tehlikeli",
+        "hiperakut",
+        "speaker_Terzi",
+        "speaker_Brennan",
+        "ana",
+        "sistem",
+        "speaker_Dobson"
+      ],
+      "izlem": [
+        "stabil",
+        "sonrası",
+        "hızı",
+        "hemodinamik",
+        "has_symptom",
+        "gonore",
+        "aritmi",
+        "planlanacak",
+        "düzelmedi",
+        "kalp",
+        "gösteren",
+        "dönem"
+      ],
+      "kesin_tanı": [
+        "speaker_House",
+        "var",
+        "doğruladı",
+        "burada",
+        "speaker_Thirteen",
+        "geçiriyor",
+        "speaker_Afsoun",
+        "ameliyat",
+        "ciddi",
+        "yayılmış",
+        "radyasyon",
+        "geliyor"
+      ],
+      "kritik": [
+        "acil",
+        "ani",
+        "gerekli",
+        "müdahale",
+        "yardım",
+        "speaker_Dr. House",
+        "speaker_Hasta",
+        "yetmezliğin",
+        "şok",
+        "has_drug",
+        "istiyorum",
+        "durması"
+      ],
+      "kronik": [
+        "sirozu",
+        "konsültasyonu",
+        "gerekli",
+        "eko",
+        "darlığın",
+        "hepatoloji",
+        "oluyor",
+        "istiyorum",
+        "şeker",
+        "speaker_Dr. Cuddy",
+        "speaker_Hasta",
+        "asit"
+      ],
+      "orta evre": [
+        "konuşmak",
+        "speaker_Dr. Foreman",
+        "tanı",
+        "çünkü",
+        "cevap",
+        "sırt",
+        "ilacını",
+        "ağrıyor",
+        "kaybın",
+        "sonucundan",
+        "speaker_Dr. Cameron",
+        "testleri"
+      ],
+      "semptom_tanıma": [
+        "bak",
+        "speaker_Max",
+        "speaker_Dan",
+        "parmağımı",
+        "ian",
+        "et",
+        "takip",
+        "speaker_Ian",
+        "iyiyim",
+        "speaker_Hannah",
+        "ateş",
+        "kod"
+      ],
+      "tanı": [
+        "speaker_Doctor",
+        "speaker_Sebastian",
+        "text",
+        "type",
+        "speaker_Nolan",
+        "speaker_Alfredo",
+        "hastada",
+        "speaker_Alvie",
+        "kaynaklanıyor",
+        "var",
+        "reaksiyon",
+        "insülin"
+      ],
+      "tanı araması": [
+        "başka",
+        "speaker_Hasta",
+        "kolundaki",
+        "önünde",
+        "bulantın",
+        "hakkında",
+        "speaker_Dr. Foreman",
+        "tıkanma",
+        "rahat",
+        "neredeyse",
+        "hastanın",
+        "öksürük"
+      ],
+      "tanı koymak": [
+        "has_procedure",
+        "seviyesi",
+        "has_symptom",
+        "veriyoruz",
+        "speaker_House",
+        "speaker_Chase",
+        "düşük",
+        "inh",
+        "belirtileri",
+        "metanol",
+        "speaker_Foreman",
+        "cameron"
+      ],
+      "tedavi": [
+        "has_drug",
+        "speaker_Doctor",
+        "hastaya",
+        "başlayın",
+        "tedavi",
+        "ona",
+        "başlandı",
+        "has_procedure",
+        "verin",
+        "speaker_Kutner",
+        "tedaviye",
+        "verildi"
+      ],
+      "tedavi sonrası": [
+        "değerini",
+        "anevrizma",
+        "speaker_Dr. Foreman",
+        "hastane",
+        "ilaç",
+        "alkol",
+        "işlemi",
+        "edenin",
+        "speaker_Dr. Cuddy",
+        "sürer",
+        "hastamızın",
+        "buluruz"
+      ],
+      "tedavi_planı": [
+        "vücut",
+        "kanser",
+        "speaker_Kutner",
+        "speaker_Attending Doctor",
+        "anjiyogram",
+        "speaker_Wilson",
+        "interferon",
+        "otopsi",
+        "ihtiyacımız",
+        "ms",
+        "yeniden",
+        "basınç"
+      ],
+      "test": [
+        "yapın",
+        "biyopsisi",
+        "has_test",
+        "speaker_Kutner",
+        "speaker_Cameron",
+        "speaker_Masters",
+        "biyopsi",
+        "mr",
+        "bt",
+        "speaker_House",
+        "speaker_Thirteen",
+        "gösterdi"
+      ],
+      "test / tetkik": [
+        "speaker_Adams",
+        "speaker_Park",
+        "doğrulamak",
+        "muayenesi",
+        "duvar",
+        "normaldi",
+        "değildi",
+        "düğümü",
+        "irin",
+        "bakalım",
+        "bunlar",
+        "pcr"
+      ],
+      "test_sonucu": [
+        "damarlarında",
+        "speaker_Kelly",
+        "serolojiler",
+        "speaker_Chase",
+        "normal",
+        "ler",
+        "si",
+        "sol",
+        "kan",
+        "yoktu",
+        "antibiyotiklerin",
+        "ateşi"
+      ],
+      "test_süreci": [
+        "iğne",
+        "irin",
+        "speaker_Lucas",
+        "bt",
+        "bölgeler",
+        "baktınız",
+        "oksipital",
+        "has_symptom",
+        "berrak",
+        "koroner",
+        "çalışmıyor",
+        "karaciğerine"
+      ]
+    }
+  },
+  {
+    "task": "organ_norm",
+    "task_label": "Organ/sistem",
+    "rows": 3390,
+    "classes": [
+      "akciğer",
+      "akciğerler",
+      "bacak",
+      "bağırsak",
+      "bağışıklık",
+      "bağışıklık sistemi",
+      "beyin",
+      "boyun",
+      "burun",
+      "böbrek",
+      "cilt",
+      "damar",
+      "deri",
+      "genel",
+      "göz",
+      "göğüs",
+      "kalp",
+      "kan",
+      "karaciğer",
+      "karın",
+      "kas",
+      "kemik",
+      "kol",
+      "kulak",
+      "mide",
+      "nötr",
+      "omurilik",
+      "pankreas",
+      "sinir",
+      "sinir sistemi",
+      "tüm vücut"
+    ],
+    "train_size": 2712,
+    "test_size": 678,
+    "vocabulary_size": 2634,
+    "model_path": "D:\\visual studio\\nlp-project\\models\\organ_norm_lr_pipeline.joblib",
+    "metrics": {
+      "accuracy": 0.3554572271386431,
+      "recall": 0.3554572271386431,
+      "f1": 0.39429734537957667,
+      "per_class": {
+        "akciğer": {
+          "precision": 0.6176470588235294,
+          "recall": 0.2916666666666667,
+          "f1": 0.39622641509433965,
+          "support": 72
+        },
+        "akciğerler": {
+          "precision": 0.25,
+          "recall": 0.75,
+          "f1": 0.375,
+          "support": 4
+        },
+        "bacak": {
+          "precision": 0.21052631578947367,
+          "recall": 0.5,
+          "f1": 0.2962962962962963,
+          "support": 16
+        },
+        "bağırsak": {
+          "precision": 0.1724137931034483,
+          "recall": 0.3333333333333333,
+          "f1": 0.22727272727272727,
+          "support": 15
+        },
+        "bağışıklık": {
+          "precision": 0.1111111111111111,
+          "recall": 0.6,
+          "f1": 0.1875,
+          "support": 5
+        },
+        "bağışıklık sistemi": {
+          "precision": 0.07692307692307693,
+          "recall": 0.16666666666666666,
+          "f1": 0.10526315789473684,
+          "support": 6
+        },
+        "beyin": {
+          "precision": 1.0,
+          "recall": 0.24324324324324326,
+          "f1": 0.391304347826087,
+          "support": 148
+        },
+        "boyun": {
+          "precision": 0.1111111111111111,
+          "recall": 0.25,
+          "f1": 0.15384615384615385,
+          "support": 4
+        },
+        "burun": {
+          "precision": 0.2857142857142857,
+          "recall": 0.4,
+          "f1": 0.3333333333333333,
+          "support": 5
+        },
+        "böbrek": {
+          "precision": 0.7647058823529411,
+          "recall": 0.48148148148148145,
+          "f1": 0.5909090909090909,
+          "support": 27
+        },
+        "cilt": {
+          "precision": 0.1,
+          "recall": 0.14285714285714285,
+          "f1": 0.11764705882352941,
+          "support": 7
+        },
+        "damar": {
+          "precision": 0.1875,
+          "recall": 0.2727272727272727,
+          "f1": 0.2222222222222222,
+          "support": 11
+        },
+        "deri": {
+          "precision": 0.13636363636363635,
+          "recall": 0.2727272727272727,
+          "f1": 0.18181818181818182,
+          "support": 11
+        },
+        "genel": {
+          "precision": 0.2765957446808511,
+          "recall": 0.43333333333333335,
+          "f1": 0.33766233766233766,
+          "support": 30
+        },
+        "göz": {
+          "precision": 0.18181818181818182,
+          "recall": 0.2857142857142857,
+          "f1": 0.2222222222222222,
+          "support": 14
+        },
+        "göğüs": {
+          "precision": 0.3076923076923077,
+          "recall": 0.6666666666666666,
+          "f1": 0.42105263157894735,
+          "support": 6
+        },
+        "kalp": {
+          "precision": 0.8679245283018868,
+          "recall": 0.45544554455445546,
+          "f1": 0.5974025974025974,
+          "support": 101
+        },
+        "kan": {
+          "precision": 0.41935483870967744,
+          "recall": 0.26,
+          "f1": 0.32098765432098764,
+          "support": 50
+        },
+        "karaciğer": {
+          "precision": 0.8064516129032258,
+          "recall": 0.5952380952380952,
+          "f1": 0.684931506849315,
+          "support": 42
+        },
+        "karın": {
+          "precision": 0.2857142857142857,
+          "recall": 0.5714285714285714,
+          "f1": 0.38095238095238093,
+          "support": 7
+        },
+        "kas": {
+          "precision": 0.0625,
+          "recall": 0.16666666666666666,
+          "f1": 0.09090909090909091,
+          "support": 6
+        },
+        "kemik": {
+          "precision": 0.25,
+          "recall": 0.16666666666666666,
+          "f1": 0.2,
+          "support": 6
+        },
+        "kol": {
+          "precision": 0.125,
+          "recall": 0.25,
+          "f1": 0.16666666666666666,
+          "support": 8
+        },
+        "kulak": {
+          "precision": 0.08333333333333333,
+          "recall": 0.25,
+          "f1": 0.125,
+          "support": 4
+        },
+        "mide": {
+          "precision": 0.375,
+          "recall": 0.5,
+          "f1": 0.42857142857142855,
+          "support": 18
+        },
+        "nötr": {
+          "precision": 0.10638297872340426,
+          "recall": 0.38461538461538464,
+          "f1": 0.16666666666666666,
+          "support": 13
+        },
+        "omurilik": {
+          "precision": 0.1111111111111111,
+          "recall": 0.42857142857142855,
+          "f1": 0.17647058823529413,
+          "support": 7
+        },
+        "pankreas": {
+          "precision": 0.23076923076923078,
+          "recall": 0.42857142857142855,
+          "f1": 0.3,
+          "support": 7
+        },
+        "sinir": {
+          "precision": 0.14285714285714285,
+          "recall": 0.14285714285714285,
+          "f1": 0.14285714285714285,
+          "support": 7
+        },
+        "sinir sistemi": {
+          "precision": 0.11764705882352941,
+          "recall": 0.16666666666666666,
+          "f1": 0.13793103448275862,
+          "support": 12
+        },
+        "tüm vücut": {
+          "precision": 0.2857142857142857,
+          "recall": 0.4444444444444444,
+          "f1": 0.34782608695652173,
+          "support": 9
+        }
+      }
+    },
+    "majority_baseline": {
+      "accuracy": 0.2182890855457227,
+      "recall": 0.2182890855457227,
+      "f1": 0.07822466019556165,
+      "per_class": {
+        "akciğer": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 72
+        },
+        "akciğerler": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "bacak": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 16
+        },
+        "bağırsak": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 15
+        },
+        "bağışıklık": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "bağışıklık sistemi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "beyin": {
+          "precision": 0.2182890855457227,
+          "recall": 1.0,
+          "f1": 0.3583535108958838,
+          "support": 148
+        },
+        "boyun": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "burun": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "böbrek": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 27
+        },
+        "cilt": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "damar": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "deri": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        "genel": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 30
+        },
+        "göz": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 14
+        },
+        "göğüs": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "kalp": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 101
+        },
+        "kan": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 50
+        },
+        "karaciğer": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 42
+        },
+        "karın": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "kas": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "kemik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 6
+        },
+        "kol": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "kulak": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "mide": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 18
+        },
+        "nötr": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        "omurilik": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "pankreas": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "sinir": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 7
+        },
+        "sinir sistemi": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 12
+        },
+        "tüm vücut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 9
+        }
+      },
+      "majority_class": "beyin"
+    },
+    "top_tokens": {
+      "akciğer": [
+        "akciğer",
+        "nefes",
+        "oksijen",
+        "pulmoner",
+        "akciğerleri",
+        "solunum",
+        "akciğerlerde",
+        "speaker_Park",
+        "speaker_Sebastian",
+        "satürasyonu",
+        "speaker_Doctor",
+        "entübe"
+      ],
+      "akciğerler": [
+        "akciğer",
+        "müdahale",
+        "değerleri",
+        "has_drug",
+        "has_procedure",
+        "gerekli",
+        "oraya",
+        "has_test",
+        "aldım",
+        "speaker_Wilson",
+        "embolisi",
+        "oksijen"
+      ],
+      "bacak": [
+        "ağrı",
+        "bacağındaki",
+        "bacağım",
+        "bacak",
+        "speaker_Jeff",
+        "ağrısı",
+        "bacağında",
+        "şiddetli",
+        "speaker_House",
+        "house",
+        "bacağımda",
+        "hareket"
+      ],
+      "bağırsak": [
+        "bağırsak",
+        "bağırsakta",
+        "ishal",
+        "crohn",
+        "speaker_Thirteen",
+        "speaker_Taub",
+        "hastamızın",
+        "speaker_Mendelson",
+        "bağırsaklarında",
+        "kolonoskopi",
+        "intestinal",
+        "whipple"
+      ],
+      "bağışıklık": [
+        "bağışıklık",
+        "otoimmün",
+        "kültürü",
+        "speaker_Thirteen",
+        "sistemini",
+        "speaker_Volakis",
+        "reaksiyon",
+        "listeria",
+        "speaker_Taub",
+        "yok",
+        "düşünüldü",
+        "önceki"
+      ],
+      "bağışıklık sistemi": [
+        "bağışıklık",
+        "lupus",
+        "aids",
+        "sistemini",
+        "alerjik",
+        "doğuştan",
+        "ige",
+        "testler",
+        "sistemik",
+        "biyolojik",
+        "karşı",
+        "speaker_Hasta"
+      ],
+      "beyin": [
+        "beyin",
+        "nöbet",
+        "speaker_Nolan",
+        "mr",
+        "eeg",
+        "serebral",
+        "beyninde",
+        "nörolojik",
+        "inme",
+        "baş",
+        "hafıza",
+        "mri"
+      ],
+      "boyun": [
+        "gerekiyor",
+        "speaker_Clancy",
+        "çip",
+        "boyun",
+        "speaker_Sarah",
+        "boynunda",
+        "boynunu",
+        "seni",
+        "gidin",
+        "olduğuna",
+        "speaker_Broda",
+        "arkasında"
+      ],
+      "burun": [
+        "burun",
+        "kanaması",
+        "speaker_Lexa",
+        "evet",
+        "kanalı",
+        "has_symptom",
+        "hafta",
+        "reflü",
+        "boşaltın",
+        "izin",
+        "verin",
+        "düşünüyorsun"
+      ],
+      "böbrek": [
+        "böbrek",
+        "idrar",
+        "böbrekleri",
+        "böbrekler",
+        "idrarda",
+        "iflas",
+        "taşı",
+        "protein",
+        "diyalize",
+        "idrarımda",
+        "ediyor",
+        "böbreklerini"
+      ],
+      "cilt": [
+        "dirençli",
+        "döküntü",
+        "cilt",
+        "alerji",
+        "kurdeşen",
+        "biyopsi",
+        "speaker_Hasta",
+        "kolundaki",
+        "oğlunuz",
+        "yapın",
+        "geçer",
+        "hastası"
+      ],
+      "damar": [
+        "damarlarında",
+        "vasküler",
+        "damarlarını",
+        "damar",
+        "pıhtı",
+        "heparin",
+        "kan",
+        "anjiyogram",
+        "vaskülit",
+        "speaker_Surgeon",
+        "midede",
+        "vasküliti"
+      ],
+      "deri": [
+        "deri",
+        "döküntü",
+        "speaker_Doctor",
+        "speaker_Adams",
+        "bandı",
+        "gösterebilir",
+        "görülen",
+        "enfeksiyon",
+        "irin",
+        "vaskülit",
+        "bulaşan",
+        "testosteron"
+      ],
+      "genel": [
+        "speaker_Roy",
+        "ateşi",
+        "hasta",
+        "insanlar",
+        "çevresel",
+        "farklı",
+        "hastalıkları",
+        "kanser",
+        "speaker_Cuddy",
+        "speaker_House",
+        "savaş",
+        "başka"
+      ],
+      "göz": [
+        "göz",
+        "görme",
+        "göremiyorum",
+        "optik",
+        "retina",
+        "speaker_Danny",
+        "üveit",
+        "kanama",
+        "net",
+        "gözün",
+        "muayene",
+        "sarılık"
+      ],
+      "göğüs": [
+        "göğüs",
+        "göğsüm",
+        "göğsümde",
+        "arasına",
+        "speaker_Phillip",
+        "hissediyor",
+        "si",
+        "tuhaf",
+        "ağrısı",
+        "speaker_Hank",
+        "speaker_Kalvin",
+        "speaker_Vanessa"
+      ],
+      "kalp": [
+        "kalp",
+        "kalbi",
+        "ekg",
+        "kardiyak",
+        "kalbini",
+        "krizi",
+        "aritmi",
+        "eko",
+        "fib",
+        "kalbinin",
+        "endokardit",
+        "hızı"
+      ],
+      "kan": [
+        "kan",
+        "pıhtılaşma",
+        "kanı",
+        "anemi",
+        "alın",
+        "lösemi",
+        "düşük",
+        "kırmızı",
+        "speaker_Dr. Chase",
+        "kanın",
+        "kanını",
+        "bozukluğu"
+      ],
+      "karaciğer": [
+        "karaciğer",
+        "karaciğeri",
+        "hepatit",
+        "karaciğerinde",
+        "iflas",
+        "speaker_Wilson",
+        "karaciğerine",
+        "speaker_Dr. Wilson",
+        "karaciğerinin",
+        "karaciğerde",
+        "karaciğerini",
+        "alt"
+      ],
+      "karın": [
+        "karın",
+        "karında",
+        "abdominal",
+        "ultrason",
+        "turner",
+        "grey",
+        "içine",
+        "dolu",
+        "speaker_Hourani",
+        "speaker_Dana",
+        "speaker_Boyd",
+        "hayır"
+      ],
+      "kas": [
+        "kas",
+        "kasları",
+        "speaker_Landon",
+        "felç",
+        "dokusunda",
+        "görünüyor",
+        "olabilir",
+        "hissediyorum",
+        "crush",
+        "speaker_Captain McCreaney",
+        "tetani",
+        "iki"
+      ],
+      "kemik": [
+        "kemik",
+        "osteopeni",
+        "speaker_Kelly",
+        "tümör",
+        "speaker_Adams",
+        "gastroskopi",
+        "zayıflatıyor",
+        "tespit",
+        "planlayın",
+        "sabah",
+        "beş",
+        "malign"
+      ],
+      "kol": [
+        "bahsetmedi",
+        "speaker_Dr. Foreman",
+        "kolum",
+        "speaker_Dr. Cuddy",
+        "kolunda",
+        "kolunu",
+        "kanıyor",
+        "söylüyor",
+        "speaker_Ramon",
+        "aşısı",
+        "speaker_Will",
+        "eğer"
+      ],
+      "kulak": [
+        "implant",
+        "kulağında",
+        "işitsel",
+        "speaker_Jack",
+        "duyamıyorum",
+        "speaker_Nick",
+        "gelen",
+        "buradan",
+        "işitme",
+        "bozuk",
+        "speaker_Bert",
+        "testi"
+      ],
+      "mide": [
+        "mide",
+        "endoskopi",
+        "kusma",
+        "midesinin",
+        "biyopsi",
+        "midem",
+        "tekrar",
+        "kustu",
+        "speaker_Cole",
+        "ülser",
+        "ağrısı",
+        "zaten"
+      ],
+      "nötr": [
+        "speaker_Georgia",
+        "speaker_Cameron",
+        "çocuk",
+        "organofosfatlar",
+        "pestisit",
+        "zehir",
+        "yoğun",
+        "çıktı",
+        "testin",
+        "matt",
+        "zahmetine",
+        "şimdi"
+      ],
+      "omurilik": [
+        "speaker_John Henry",
+        "kadar",
+        "omuriliğe",
+        "hermitte",
+        "felç",
+        "olabilir",
+        "spinal",
+        "var",
+        "yapıyor",
+        "lp",
+        "speaker_Frontman",
+        "malformasyon"
+      ],
+      "pankreas": [
+        "pankreas",
+        "pankreatit",
+        "pankreasında",
+        "kitle",
+        "pankreasta",
+        "ultrason",
+        "pankreatik",
+        "insülinoma",
+        "insülin",
+        "üst",
+        "organları",
+        "pankreatitin"
+      ],
+      "sinir": [
+        "sinir",
+        "crps",
+        "duyusal",
+        "speaker_Daniel",
+        "ekarte",
+        "semptomdur",
+        "guillain",
+        "barr",
+        "multipl",
+        "skleroz",
+        "sinirlere",
+        "speaker_Doctor"
+      ],
+      "sinir sistemi": [
+        "nörolojik",
+        "speaker_Victoria",
+        "emg",
+        "sinir",
+        "istemsiz",
+        "motor",
+        "ivig",
+        "nöropati",
+        "belirgin",
+        "uyuşma",
+        "olabileceğini",
+        "speaker_Jane Doe"
+      ],
+      "tüm vücut": [
+        "ani",
+        "kanama",
+        "otopsi",
+        "speaker_Dr. Cuddy",
+        "sayede",
+        "vücudu",
+        "şok",
+        "has_drug",
+        "gerekli",
+        "kemik",
+        "metilprednizolon",
+        "nerede"
+      ]
+    }
+  }
+]

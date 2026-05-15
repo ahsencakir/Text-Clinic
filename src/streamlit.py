@@ -121,16 +121,6 @@ def render_selected_task_metrics(task: str, metrics_by_task: dict) -> None:
     c3.metric("Weighted F1", metric_value(metrics, "weighted_f1"))
     c4.metric("Majority Acc.", metric_value(majority, "accuracy"))
 
-def render_report_links() -> None:
-    links = [
-        ("Veri özeti", DATASET_SUMMARY_PATH),
-        ("Model metrikleri", BASELINE_METRICS_JSON_PATH.parent / "baseline_metrics.md"),
-        ("Özellik seçimi", BASELINE_METRICS_JSON_PATH.parent / "feature_selection.md"),
-    ]
-    existing = [f"- [{name}]({path})" for name, path in links if path.exists()]
-    if existing:
-        st.markdown("\n".join(existing))
-
 def main() -> None:
     st.set_page_config(page_title="House MD NLP", layout="wide")
     st.title("House MD Türkçe Medikal Diyalog Analizi")
@@ -143,7 +133,7 @@ def main() -> None:
 
     st.divider()
 
-    tab1, tab2, tab3, tab4 = st.tabs(["Diyalog Tahmini (Klasik Model)", "Diyalog Akışı & İstatistikleri", "Tüm Model Metrikleri", "Derin Öğrenme (BERT & NER)"])
+    tab1, tab2, tab3 = st.tabs(["Diyalog Tahmini (Klasik Model)", "Derin Öğrenme (BERT & NER)", "Tüm Model Metrikleri"])
 
     with tab1:
         left, right = st.columns([1.05, 1.4], gap="large")
@@ -178,56 +168,7 @@ def main() -> None:
                 top_scores["Olasılık"] = top_scores["Olasılık"].round(4)
                 st.dataframe(top_scores, hide_index=True, use_container_width=True)
 
-                chart_data = top_scores.set_index("Sınıf")[["Olasılık"]]
-                st.bar_chart(chart_data)
-
     with tab2:
-        st.subheader("Bölüm İçi Intent (Konuşma Amacı) Akışı")
-        st.markdown("Doktorların konuşma amaçlarının (Intent) bir cümleden diğerine nasıl geçtiğini gösteren analiz.")
-        
-        if "intent_norm" in df.columns and "episode" in df.columns:
-            # Shift intent to find next intent within the same episode
-            df_flow = df.copy()
-            df_flow["next_intent"] = df_flow.groupby(["season", "episode"])["intent_norm"].shift(-1)
-            df_flow = df_flow.dropna(subset=["intent_norm", "next_intent"])
-            df_flow = df_flow[df_flow["intent_norm"] != "unknown"]
-            df_flow = df_flow[df_flow["next_intent"] != "unknown"]
-            
-            transitions = df_flow.groupby(["intent_norm", "next_intent"]).size().reset_index(name="count")
-            transitions = transitions.sort_values(by="count", ascending=False).head(15)
-            
-            st.dataframe(transitions, use_container_width=True)
-            
-            st.subheader("Konuşmacı - Duygu Dağılımı")
-            if "emotion_norm" in df.columns and "speaker" in df.columns:
-                main_speakers = ["House", "Wilson", "Cameron", "Chase", "Foreman", "Cuddy"]
-                emotion_df = df[df["speaker"].isin(main_speakers) & (df["emotion_norm"] != "unknown")]
-                pivot = pd.crosstab(emotion_df["speaker"], emotion_df["emotion_norm"])
-                st.bar_chart(pivot, height=400)
-        else:
-            st.warning("Gerekli kolonlar bulunamadı.")
-
-    with tab3:
-        st.subheader("Tüm Model Metrikleri Özeti (Scikit-Learn)")
-        st.markdown("Burada eğitilen tüm görevlere ait klasik model performans metriklerini toplu halde görebilirsin.")
-        
-        if metrics_by_task:
-            summary_rows = []
-            for t_key, item in metrics_by_task.items():
-                metrics = item["metrics"]
-                summary_rows.append({
-                    "Görev": item.get("task_label", t_key),
-                    "Satır Sayısı": item.get("rows", 0),
-                    "Sınıf Sayısı": len(item.get("classes", [])),
-                    "Accuracy": round(metrics.get("accuracy", 0), 3),
-                    "Macro F1": round(metrics.get("macro_f1", 0), 3),
-                    "Weighted F1": round(metrics.get("weighted_f1", 0), 3)
-                })
-            st.dataframe(pd.DataFrame(summary_rows), use_container_width=True, hide_index=True)
-        else:
-            st.info("Metrik bulunamadı. Önce `python -m src.train_baselines` çalıştır.")
-
-    with tab4:
         st.subheader("Derin Öğrenme Modelleri (BERTurk & NER)")
         st.markdown("Eğittiğin BERT ve Medikal NER modellerini burada test edebilirsin.")
         
@@ -238,7 +179,7 @@ def main() -> None:
         if bert_btn:
             bert_model = load_bert_model()
             if bert_model is None:
-                st.warning("BERT modeli henüz eğitilmemiş veya bulunamadı. Lütfen `python -m src.train_bert` çalıştırarak modeli eğitin.")
+                st.warning("BERT modeli henüz eğitilmemiş veya bulunamadı. Lütfen `python -m src.train_baselines --bert` çalıştırarak modeli eğitin.")
             else:
                 with st.spinner("BERT modeli tahmin yapıyor..."):
                     result = bert_model(dl_text)
@@ -247,7 +188,7 @@ def main() -> None:
         if ner_btn:
             ner_model = load_ner_model()
             if ner_model is None:
-                st.warning("NER modeli henüz eğitilmemiş veya bulunamadı. Lütfen `python -m src.train_ner` çalıştırarak modeli eğitin.")
+                st.warning("NER modeli henüz eğitilmemiş veya bulunamadı. Lütfen `python -m src.train_baselines --ner` çalıştırarak modeli eğitin.")
             else:
                 with st.spinner("NER modeli analiz yapıyor..."):
                     entities = ner_model(dl_text)
@@ -258,9 +199,37 @@ def main() -> None:
                         for ent in entities:
                             st.markdown(f"- **{ent['word']}** : `{ent['entity_group']}` (Güven: %{ent['score']*100:.2f})")
 
-    st.divider()
-    st.subheader("Rapor Dosyaları")
-    render_report_links()
+    with tab3:
+        st.subheader("Tüm Model Metrikleri Özeti")
+        st.markdown("Eğitilen tüm görevlere ait model performans metrikleri:")
+        
+        summary_rows = []
+        if metrics_by_task:
+            for t_key, item in metrics_by_task.items():
+                metrics = item["metrics"]
+                summary_rows.append({
+                    "Görev": item.get("task_label", t_key),
+                    "Satır Sayısı": str(item.get("rows", 0)),
+                    "Sınıf Sayısı": str(len(item.get("classes", []))),
+                    "Accuracy": str(round(metrics.get("accuracy", 0), 3))
+                })
+                
+        dl_metrics_path = Path("reports/dl_metrics.json")
+        if dl_metrics_path.exists():
+            dl_metrics = json.loads(dl_metrics_path.read_text(encoding="utf-8"))
+            for model_name, metrics in dl_metrics.items():
+                task_name = f"{model_name} (Konuşma amacı)" if model_name == "BERT" else f"{model_name} (Medikal varlıklar)"
+                summary_rows.append({
+                    "Görev": task_name,
+                    "Satır Sayısı": str(metrics.get("rows", "-")),
+                    "Sınıf Sayısı": str(metrics.get("classes", "-")),
+                    "Accuracy": str(round(metrics.get("accuracy", 0), 3))
+                })
+        
+        if summary_rows:
+            st.dataframe(pd.DataFrame(summary_rows), use_container_width=True, hide_index=True)
+        else:
+            st.info("Metrik bulunamadı. Önce eğitim betiklerini çalıştırın.")
 
 if __name__ == "__main__":
     main()
