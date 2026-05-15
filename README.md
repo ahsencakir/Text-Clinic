@@ -54,13 +54,13 @@ pip install -r requirements.txt
 python -m src.data_prep
 ```
 
-**Tüm Modelleri Eğitmek İçin:**
+**Modelleri Eğitmek İçin:**
 Sadece klasik modelleri (Scikit-Learn) eğitmek için:
 ```bash
 python -m src.train_baselines
 ```
 
-Klasik modellerin yanı sıra Derin Öğrenme (BERT ve NER) modellerini de eğitmek için özel bayrakları kullanabilirsiniz (Eğitim ekran kartı (GPU) üzerinde çalışacaktır):
+Klasik modellerin yanı sıra Derin Öğrenme (BERT ve NER) modellerini de eğitmek için özel bayrakları kullanabilirsiniz:
 ```bash
 python -m src.train_baselines --bert --ner
 ```
