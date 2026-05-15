@@ -1,4 +1,4 @@
-# House MD Türkçe Medikal Diyalog NLP Projesi
+# House MD: Türkçe Medikal Diyalog Analizi
 
 Bu proje, House MD dizisinden oluşturulan Türkçe hasta-doktor diyalog veri seti üzerinde gelişmiş doğal dil işleme (NLP) yöntemleri kullanarak medikal konuşma bağlamını analiz etmeyi amaçlar. Proje, klasik makine öğrenmesi algoritmalarından en son teknoloji Derin Öğrenme (Deep Learning) dil modellerine kadar uçtan uca bir makine öğrenmesi ardışık düzeni (pipeline) içerir.
 
