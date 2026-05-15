@@ -1,179 +1,91 @@
 # House MD Türkçe Medikal Diyalog NLP Projesi
 
-Bu proje, House MD dizisinden oluşturulan Türkçe hasta-doktor diyalog veri seti
-üzerinde doğal dil işleme yöntemleri kullanarak medikal konuşma bağlamını
-analiz etmeyi amaçlar.
+Bu proje, House MD dizisinden oluşturulan Türkçe hasta-doktor diyalog veri seti üzerinde gelişmiş doğal dil işleme (NLP) yöntemleri kullanarak medikal konuşma bağlamını analiz etmeyi amaçlar. Proje, klasik makine öğrenmesi algoritmalarından en son teknoloji Derin Öğrenme (Deep Learning) dil modellerine kadar uçtan uca bir makine öğrenmesi ardışık düzeni (pipeline) içerir.
 
 ## Proje Konusu
 
-**House MD Türkçe medikal diyaloglarında konuşma amacı, duygu ve sarkazm
-analizi**
+**House MD Türkçe medikal diyaloglarında konuşma amacı, duygu, sarkazm ve medikal varlık analizi**
 
-Ana problem, bir diyalog cümlesinin metnine bakarak o cümlenin hangi iletişim
-amacını taşıdığını, hangi duygu tonuna sahip olduğunu ve sarkazm içerip
-içermediğini tahmin etmektir. Projeyi güçlendirmek için organ/sistem ve tanı
-süreci aşaması da yan sınıflandırma görevleri olarak ele alınır.
-
-## Araştırma Soruları
-
-- Medikal diyaloglarda konuşma amacı yalnızca metinden tahmin edilebilir mi?
-- Sarkazm içeren doktor replikleri klasik metin özellikleriyle ayrıştırılabilir mi?
-- Duygu sınıfları, medikal terimler ve konuşmacı tarzı ile ilişkili midir?
-- Semptom, test, ilaç ve prosedür bilgileri model başarısını artırabilir mi?
-- Organ/sistem veya tanı aşaması gibi medikal bağlam etiketleri metinden
-  çıkarılabilir mi?
+Ana problem, bir diyalog cümlesinin metnine bakarak o cümlenin hangi iletişim amacını taşıdığını, hangi duygu tonuna sahip olduğunu ve sarkazm içerip içermediğini tahmin etmektir. Projeyi güçlendirmek için organ/sistem ve tanı süreci aşaması da yan sınıflandırma görevleri olarak ele alınırken, Derin Öğrenme (NER) modelleri ile metin içerisindeki medikal varlıklar (Hastalık, İlaç, Semptom vb.) tespit edilmektedir.
 
 ## Veri Seti
 
-Ham veri dosyası:
+Ham veri dosyası `data/house_md_dataset.csv` yolunda bulunmaktadır.
 
-```text
-data/raw/house_md_dataset.csv
-```
+Veri seti temel olarak aşağıdaki özelliklerden oluşur:
+- `season`, `episode`, `speaker` (Konuşmacı ve bağlam bilgileri)
+- `Symptom`, `Test`, `Drug`, `Procedure` (Bulunan medikal varlıklar)
+- `Intent`, `diagnosis_stage`, `Sarcasm`, `Emotion`, `Organ` (Sınıflandırma hedefleri)
+- `text` (İncelenecek replik metni)
+- `medical_entities` (JSON formatında çıkarılmış medikal varlık etiketleri)
 
-Veri seti 7282 satırdan oluşur. Temel kolonlar:
+## Yöntem ve Mimariler
 
-- `season`, `episode`, `speaker`
-- `Symptom`, `Test`, `Drug`, `Procedure`
-- `Intent`, `diagnosis_stage`, `Sarcasm`, `Emotion`, `Organ`
-- `correct_prediction`, `model_prediction`
-- `text`
-- `medical_entities`
+Proje üç ana aşamadan oluşur:
 
-## Yöntem
+### 1. Veri Hazırlama (`src/data_prep.py`)
+- Veri seti temizlenir, boş veya geçersiz etiketler ayıklanır.
+- `medical_entities` json kolonundan anlamlı özellikler (entity count) çıkarılır.
+- İşlenmiş ve temizlenmiş veri seti `data/house_md_clean.csv` olarak kaydedilir.
 
-### 1. Veri İşleme
+### 2. Klasik Makine Öğrenmesi (`src/train_baselines.py`)
+Tüm NLP görevleri (Intent, Emotion, Sarcasm, Diagnosis Stage, Organ) için Scikit-Learn kullanılarak güçlü bir `Pipeline` kurulmuştur:
+- **Metin Temsili:** Özel Türkçe tokenizasyon + `TfidfVectorizer` (TF-IDF).
+- **Ek Özellikler (Feature Engineering):** Konuşmacı kimliği (`speaker`) One-Hot Encoding ile, medikal varlık sayıları ise numerik olarak Modele eklenir.
+- **Sınıflandırma Modeli:** Dengesiz sınıflar için ağırlıklandırılmış `LogisticRegression` modeli kullanılır.
+- **Çıktılar:** Tüm modeller `.joblib` formatında `models/` klasörüne kaydedilir.
 
-`src/data_prep.py` scripti aşağıdaki işlemleri yapar:
+### 3. Derin Öğrenme (HuggingFace Transformers)
+Projede klasik NLP yaklaşımlarının yanı sıra modern Transformer tabanlı modeller de bulunur:
+- **BERTurk Sınıflandırması:** Türkçe BERT modeli (`dbmdz/bert-base-turkish-cased`) kullanılarak metin sınıflandırma (örn: Konuşma amacı tahmini) için fine-tuning (ince ayar) yapılır.
+- **Medikal NER (Varlık İsmi Tanıma):** Replikler içindeki özel medikal kelimeleri (Semptom, İlaç vb.) Token Classification (BIO formatında) yöntemiyle tespit eden özel bir NER modeli eğitilir.
 
-- CSV dosyasını UTF-8 olarak okur.
-- Boş metinleri veri setinden çıkarır.
-- Metin alanındaki gereksiz boşlukları temizler.
-- `Intent`, `Emotion`, `Sarcasm`, `diagnosis_stage` ve `Organ` etiketlerini
-  normalize eder.
-- Büyük/küçük harf farklılıklarını birleştirir.
-- `-`, `none`, boş değer gibi geçersiz etiketleri `unknown` olarak işaretler.
-- `medical_entities` kolonundaki JSON benzeri varlık listesini ayrıştırır.
-- Semptom, test, ilaç ve prosedür varlığı için boolean özellikler üretir.
-- Temizlenmiş veri setini `data/processed/house_md_clean.csv` olarak kaydeder.
+## Kurulum ve Çalıştırma
 
-### 2. Özellik Çıkarımı
+Gerekli olan tüm kütüphaneler (Scikit-Learn, PyTorch, Transformers, Streamlit) tek bir dosyada birleştirilmiştir.
 
-İlk modelde metinlerden aşağıdaki özellikler çıkarılır:
-
-- Türkçe karakterleri destekleyen tokenizasyon
-- Küçük harfe çevirme
-- Türkçe stopword temizleme
-- Bag-of-words kelime frekansı temsili
-- Medikal varlık sayısı ve varlık türü özetleri
-- `has_symptom`, `has_test`, `has_drug`, `has_procedure` yardımcı özellikleri
-
-### 3. Özellik Seçimi
-
-`src/train_baselines.py` eğitim sırasında özellik seçimini şu şekilde yapar:
-
-- Çok nadir geçen kelimeleri eler.
-- En sık ve en kullanışlı ilk 5000 tokenı sözlüğe alır.
-- Her görev için örneği çok az olan sınıfları dışarıda bırakır.
-- Her sınıf için ayırt edici kelimeleri raporlar.
-
-Üretilen özellik seçimi raporu:
-
-```text
-reports/feature_selection.md
-```
-
-### 4. Modelleme
-
-İlk sürümde baseline model olarak **Bag-of-Words + Multinomial Naive Bayes**
-kullanılır. Bu yaklaşım, transformer tabanlı modellere geçmeden önce veri
-setinin öğrenilebilirliğini ölçmek için güçlü ve açıklanabilir bir başlangıçtır.
-
-Modelleme görevleri:
-
-- `intent_norm`: konuşma amacı tahmini
-- `emotion_norm`: duygu tahmini
-- `sarcasm_label`: sarkazm tahmini
-- `diagnosis_stage_norm`: tanı süreci aşaması tahmini
-- `organ_norm`: organ/sistem tahmini
-
-### 5. Değerlendirme
-
-Her görev için aşağıdaki metrikler hesaplanır:
-
-- Accuracy
-- Macro F1
-- Weighted F1
-- Majority baseline karşılaştırması
-- Sınıf bazlı precision, recall ve F1
-
-## Çalıştırma
-
-Kurulum:
-
+**Bağımlılıkları yüklemek için:**
 ```bash
 pip install -r requirements.txt
 ```
 
-İleri seviye deneyler için opsiyonel paketler:
-
-```bash
-pip install -r requirements-optional.txt
-```
-
-Veri temizleme:
-
+**Veriyi temizlemek ve hazırlamak için:**
 ```bash
 python -m src.data_prep
 ```
 
-Baseline modelleri eğitme:
-
+**Tüm Modelleri Eğitmek İçin:**
+Sadece klasik modelleri (Scikit-Learn) eğitmek için:
 ```bash
 python -m src.train_baselines
 ```
 
-Streamlit arayüzünü açma:
-
+Klasik modellerin yanı sıra Derin Öğrenme (BERT ve NER) modellerini de eğitmek için özel bayrakları kullanabilirsiniz (Eğitim ekran kartı (GPU) üzerinde çalışacaktır):
 ```bash
-python -m streamlit run streamlit_app.py
+python -m src.train_baselines --bert --ner
 ```
 
-Tek cümle tahmini:
-
+**Streamlit Web Arayüzünü Başlatmak İçin:**
+Eğittiğiniz tüm modelleri test edebileceğiniz, sonuçları ve metrikleri görselleştiren web uygulamasını başlatın:
 ```bash
-python -m src.predict --task intent_norm --text "Hastanın MR sonucunda lezyon görüldü."
+python -m streamlit run src/streamlit.py
 ```
 
-## Çıktılar
-
-Scriptler çalıştığında aşağıdaki dosyalar üretilir:
-
-```text
-data/processed/house_md_clean.csv
-reports/dataset_summary.md
-reports/label_distribution.csv
-reports/feature_selection.md
-reports/baseline_metrics.json
-reports/baseline_metrics.md
-reports/prediction_samples.csv
-models/*.json
+**Komut Satırından Hızlı Tahmin (Predict):**
+```bash
+python -m src.predict --task intent_norm --text "Hastaya acilen antibiyotik başlayın." --speaker House
 ```
 
-## Sunum Planı
+## Streamlit Arayüzü
 
-1. Veri setinin tanıtılması
-2. Problem tanımı ve araştırma soruları
-3. Veri temizleme adımları
-4. Özellik çıkarımı ve özellik seçimi
-5. Baseline model mimarisi
-6. Model sonuçları ve hata analizi
-7. Geliştirme önerileri: TF-IDF, Logistic Regression, BERTurk, NER
+Geliştirilen Streamlit arayüzü 3 ana sekmeden oluşur:
+1. **Diyalog Tahmini (Klasik Model):** Eğittiğiniz TF-IDF + Logistic Regression `.joblib` modellerini kullanarak canlı olarak cümlelerin niyetini, duygusunu veya sarkazm içerip içermediğini tahmin edebilirsiniz.
+2. **Tüm Model Metrikleri:** Scikit-Learn klasik modelleri ve Derin Öğrenme modellerinin (HuggingFace) `Accuracy`, `Macro F1` ve `Loss` metriklerini karşılaştırmalı tablolar halinde incelersiniz.
+3. **Derin Öğrenme (BERT & NER):** Fine-tune edilmiş BERT modeli ile cümle analizi yapabilir ve eğitilmiş NER modeliyle cümlenin içindeki medikal terimleri (Token Classification) otomatik olarak buldurabilirsiniz.
 
-## Geliştirme Fikirleri
+## Üretilen (Çıktı) Dosyalar
 
-- TF-IDF + Logistic Regression veya Linear SVM modeli eklemek
-- BERTurk ile metin sınıflandırma yapmak
-- `medical_entities` alanını kullanarak medikal varlık tanıma modeli kurmak
-- Konuşmacı bazlı duygu ve sarkazm analizi yapmak
-- Sezon/bölüm bazlı tanı süreci akışını görselleştirmek
+Scriptleri çalıştırdığınızda aşağıdaki klasörler ve dosyalar otomatik olarak oluşturulur:
+- `data/house_md_clean.csv`: Temizlenmiş veri.
+- `reports/`: Veri seti özetleri, özellik seçimi raporları, klasik ve DL modellerin performans metriklerini içeren JSON ve CSV dosyaları.
+- `models/`: Tüm eğitim ağırlıkları (`.joblib` dosyaları ve PyTorch/Transformers `bert_model` & `ner_model` dizinleri).
